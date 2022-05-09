@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
 import HeaderContainer from 'carbon-components-react/lib/components/UIShell/HeaderContainer';
 import {
   Header,
@@ -14,19 +13,21 @@ import {
   SideNavItems,
   SideNavLink,
 } from 'carbon-components-react/lib/components/UIShell';
-
-import { Home20 } from '@carbon/icons-react';
-import { Microscope20 } from '@carbon/icons-react';
-import { Report20 } from '@carbon/icons-react';
-import { Rule20 } from '@carbon/icons-react';
-import { PresentationFile20 } from '@carbon/icons-react';
-import { Trophy20 } from '@carbon/icons-react';
-import { Bullhorn20 } from '@carbon/icons-react';
-import { Education20 } from '@carbon/icons-react';
+import {
+  Home20,
+  Microscope20,
+  Report20,
+  Rule20,
+  PresentationFile20,
+  Trophy20,
+  Bullhorn20,
+  Education20,
+} from '@carbon/icons-react';
 
 class PageHeader extends React.Component {
   constructor(props) {
     super();
+    // this.history = useHistory();
     this.state = {
       current: 'home',
       home: true,
@@ -89,7 +90,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#research"
+                      element={Link}
+                      to="/research"
                       renderIcon={Microscope20}
                       children="Research"
                       onClick={this.onClickTab.bind(this, 'research')}
@@ -97,7 +99,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#publications"
+                      element={Link}
+                      to="/publications"
                       renderIcon={Report20}
                       children="Publications"
                       onClick={this.onClickTab.bind(this, 'publications')}
@@ -105,7 +108,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#thesis"
+                      element={Link}
+                      to="/thesis"
                       renderIcon={Education20}
                       children="Thesis"
                       onClick={this.onClickTab.bind(this, 'thesis')}
@@ -113,7 +117,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#patents"
+                      element={Link}
+                      to="/patents"
                       renderIcon={Rule20}
                       children="Patents"
                       onClick={this.onClickTab.bind(this, 'patents')}
@@ -121,7 +126,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#talks"
+                      element={Link}
+                      to="/talks"
                       renderIcon={PresentationFile20}
                       children="Talks"
                       onClick={this.onClickTab.bind(this, 'talks')}
@@ -129,7 +135,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#awards"
+                      element={Link}
+                      to="/awards"
                       renderIcon={Trophy20}
                       children="Awards"
                       onClick={this.onClickTab.bind(this, 'awards')}
@@ -137,7 +144,8 @@ class PageHeader extends React.Component {
                       large
                     />
                     <SideNavLink
-                      href="/#news"
+                      element={Link}
+                      to="/news"
                       renderIcon={Bullhorn20}
                       children="News"
                       onClick={this.onClickTab.bind(this, 'news')}

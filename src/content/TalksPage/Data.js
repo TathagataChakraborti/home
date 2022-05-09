@@ -1,9 +1,22 @@
 const DATA = [
   {
-    id: 90,
+    id: 92,
     title: 'Emergent Process Composition from Natural Language Inputs',
     venue: 'BPM 2022 RPA Forum Keynote',
     link: 'https://bpm2022.uni-muenster.de/calls-and-dates/call-for-rpa-forum',
+  },
+  {
+    id: 91,
+    title: 'Explanations as an Interactive Dialogue',
+    venue: 'Panel at ICAPS 2022 Workshop on Explainable AI Planning',
+    link: 'http://xaip.mybluemix.net/2022',
+  },
+  {
+    id: 90,
+    title:
+      'Exploration of innovative ways in which data and digital / hybrid tools can be used to develop multidimensional stories focused on health crises: The COVID-19 India Dataset',
+    venue: 'Panel at Fridays at Proto',
+    link: 'https://twitter.com/heyproto/status/1471870555754143745',
   },
   {
     id: 89,
@@ -16,7 +29,7 @@ const DATA = [
     id: 90,
     title: 'Explainability of Sequential Decision-Making Models',
     venue: 'XAI Bootscamp at the Robert Bosch Centre for Data Science and AI',
-    link: 'https://rbcdsai.iitm.ac.in/events/rbcdsai-dai-bootcamp/',
+    link: 'https://rbcdsai.iitm.ac.in/Bootcamp-DAI',
   },
   {
     id: 91,
@@ -26,10 +39,10 @@ const DATA = [
   },
   {
     id: 92,
-    title: 'Panel: Explainable Agents - Escape from the Ivory Tower',
+    title: 'Explainable Agents - Escape from the Ivory Tower',
     venue:
-      'Workshop on EXplainable and TRAnsparent AI and Multi-Agent Systems (EXTRAAMAS)',
-    link: 'https://extraamas.ehealth.hevs.ch/',
+      'Panel at Workshop on EXplainable and TRAnsparent AI and Multi-Agent Systems (EXTRAAMAS)',
+    link: 'https://extraamas.ehealth.hevs.ch/archive.html',
   },
   {
     id: 93,

@@ -23,13 +23,12 @@
     "carbon-components": "^10.25.0",
     "carbon-components-react": "^7.25.0",
     "carbon-icons": "^7.0.7",
+    "copy-to-clipboard": "3.3.1",
     "react": "^16.10.0",
     "react-dom": "^16.10.1",
     "react-router-dom": "^5.0.0",
-    "react-scripts": "^4.0.3",
-    "react-router-hash-link": "^2.3.1",
     "react-router-hash-link": "^1.2.2",
-    "copy-to-clipboard": "3.3.1"
+    "react-scripts": "^4.0.3"
   },
   "devDependencies": {
     "@commitlint/cli": "^7.5.2",
@@ -49,10 +48,6 @@
     "not op_mini all"
   ],
   "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS",
-      "pre-commit": "lint-staged"
-    }
   },
   "commitlint": {
     "extends": [
