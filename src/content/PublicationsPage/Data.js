@@ -1,23 +1,107 @@
 const DATA = [
   {
-    id: 20222,
+    id: 20231,
     title:
       'Virtual, Augmented, and Mixed Reality for Human-Robot Interaction: A Survey and Virtual Design Element Taxonomy',
     authors:
-      'Michael Walker and Thao Phung and Tathagata Chakraborti and Tom Williams and Daniel Szafir',
+      'Michael Walker, Thao Phung, Tathagata Chakraborti, Tom Williams, and Daniel Szafir',
     abstract:
       'Virtual, Augmented, and Mixed Reality for Human-Robot Interaction (VAM-HRI) has been gaining considerable attention in research in recent years. However, the HRI community lacks a set of shared terminology and framework for characterizing aspects of mixed reality interfaces, presenting serious problems for future research. Therefore, it is important to have a common set of terms and concepts that can be used to precisely describe and organize the diverse array of work being done within the field. In this paper, we present a novel taxonomic framework for different types of VAM-HRI interfaces, composed of four main categories of virtual design elements (VDEs). We present and justify our taxonomy and explain how its elements have been developed over the last 30 years as well as the current directions VAM-HRI is headed in the coming decade.',
-    venue: 'Technical Report',
-    year: '2022',
+    venue: 'To appear in the ACM Transactions on Human Robot Interaction',
+    year: '2023',
     xai: false,
-    bpm: true,
+    bpm: false,
     hri: true,
-    support: true,
+    support: false,
     advml: false,
     ai4code: false,
     vamhri: true,
     humanai: true,
     link: 'https://arxiv.org/abs/2202.11249',
+    note: null,
+  },
+  {
+    id: 20232,
+    title:
+      'Follow the Successful Herd: Towards Explanations for Improved Use and Mental Models of Natural Language Systems',
+    authors:
+      'Michelle Brachman, Qian Pan, Hyo Jin Do, Casey Dugan, Arunima Chaudhary, James M Johnson, Priyanshu Rai, Tathagata Chakraborti, Thomas Gschwind, and others',
+    abstract:
+      'While natural language systems continue improving, they are still imperfect. If a user has a better understanding of how a system works, they may be able to better accomplish their goals even in imperfect systems. We explored whether explanations can support effective authoring of natural language utterances and how those explanations impact users’ mental models in the context of a natural language system that generates small programs. Through an online study (n=252), we compared two main types of explanations: 1) system-focused, which provide information about how the system processes utterances and matches terms to a knowledge base, and 2) social, which provide information about how other users have successfully interacted with the system. Our results indicate that providing social suggestions of terms to add to an utterance helped users to repair and generate correct flows more than system-focused explanations or social recommendations of words to modify. We also found that participants commonly understood some mechanisms of the natural language system, such as the matching of terms to a knowledge base, but they often lacked other critical knowledge, such as how the system handled structuring and ordering. Based on these findings, we make design recommendations for supporting interactions with and understanding of natural language systems.',
+    venue: 'IUI',
+    year: '2023',
+    xai: true,
+    bpm: true,
+    hri: false,
+    support: true,
+    advml: false,
+    ai4code: true,
+    vamhri: false,
+    humanai: true,
+    link: 'https://dl.acm.org/doi/abs/10.1145/3581641.3584088',
+    note: null,
+  },
+  {
+    id: 20221,
+    title:
+      'From Natural Language to Workflows: Towards Emergent Intelligence in Robotic Process Automation',
+    authors:
+      'Tathagata Chakraborti, Yara Rizk, Vatche Isahagian, Burak Aksar, and Francesco Fuggitti',
+    abstract:
+      'RPA technologies allow the automation of repeated processes through indirect or direct instruction from the end-user. While declarative authoring techniques provide a powerful tool to scale up process complexity with RPA elements, often such techniques are difficult to use without expertise. In this work, we will explore systems (in the context of web service composition and goal-oriented conversational agents) that both consumers and developers can interact with, in natural language, to compose RPA elements that demonstrate emergent intelligence as a composition of smaller units of automation. We will also discuss the overhead in authoring such systems, and potential learning opportunities in reducing said overhead. Finally, we will explore issues of explainability for the developer and transparency of dynamic compositions for the consumer in dealing with such systems with aggregated automation.',
+    venue: 'BPM xxxx RPA Forum',
+    year: '2022',
+    xai: true,
+    bpm: true,
+    hri: false,
+    support: false,
+    advml: false,
+    ai4code: false,
+    vamhri: false,
+    humanai: true,
+    link: 'https://link.springer.com/chapter/10.1007/978-3-031-16168-1_8',
+    note: null,
+  },
+  {
+    id: 20222,
+    title:
+      'MACQ: A Holistic View of Model Acquisition Techniques',
+    authors:
+      'Ethan Callanan, Rebecca De Venezia, Victoria Armstrong, Alison Paredes, Tathagata Chakraborti, and Christian Muise',
+    abstract:
+      'For over three decades, the planning community has explored countless methods for data-driven model acquisition. These range in sophistication (e.g., simple set operations to full-blown reformulations), methodology (e.g., logic-based vs. planing-based), and assumptions (e.g., fully vs. partially observable). With no fewer than 43 publications in the space, it can be overwhelming to understand what approach could or should be applied in a new setting. We present a holistic characterization of the action model acquisition space and further introduce a unifying framework for automated action model acquisition. We have re-implemented some of the landmark approaches in the area, and our characterization of all the techniques offers deep insight into the research opportunities that remain; i.e., those settings where no technique is capable of solving.',
+    venue: 'ICAPS xxxx Workshop on Knowledge Acquisition and Engineering (KEPS) and System Demonstration Track',
+    year: '2022',
+    xai: false,
+    bpm: true,
+    hri: false,
+    support: false,
+    advml: false,
+    ai4code: false,
+    vamhri: false,
+    humanai: false,
+    link: 'https://arxiv.org/abs/2206.06530',
+    note: null,
+  },
+  {
+    id: 20223,
+    title:
+      'TOBY: A tool for exploration of data from academic survey papers',
+    authors:
+      'Tathagata Chakraborti, Jungkoo Kang, Christian Muise, Sarath Sreedhatan, Michael Walker, Daniel Szafir, and Tom Williams',
+    abstract:
+      'This paper describes TOBY, a novel visualization tool that helps a user explore the contents of an academic survey paper. The visualization consists of four components: a hierarchical view of taxonomic data in the survey, a document similarity view in the space of taxonomic classes, a network view of citations, and a new paper recommendation tool. In this paper, we will discuss these features in the context of three separate deployments of the tool.',
+    venue: 'Technical Report',
+    year: '2022',
+    xai: true,
+    bpm: true,
+    hri: false,
+    support: false,
+    advml: false,
+    ai4code: false,
+    vamhri: true,
+    humanai: true,
+    link: null,
     note: null,
   },
   {
@@ -41,6 +125,27 @@ const DATA = [
     link: 'https://www.aaai.org/AAAI22Papers/DEMO-00255-BrachmanM.pdf',
     note: null,
     video: 'https://ibm.biz/gofa-aaai',
+  },
+  {
+    id: 20216,
+    title:
+      'COVID-19 India Dataset: Parsing Detailed COVID-19 Data in Daily Health Bulletins from States in India',
+    authors:
+      'Mayank Agarwal, Tathagata Chakraborti, and Sachin Grover',
+    abstract:
+      'While India remains one of the hotspots of the COVID-19 pandemic, data about the pandemic from the country has proved to be largely inaccessible for use at scale. Much of the data exists in an unstructured form on the web, and limited aspects of such data are available through public APIs maintained manually through volunteer efforts. This has proved to be difficult both in terms of ease of access to detailed data as well as with regards to the maintenance of manual data-keeping over time. This paper reports on a recently launched project aimed at automating the extraction of such data from public health bulletins with the help of a combination of classical PDF parsers as well as the state of the art ML-based documents extraction APIs. In this paper, we will describe the automated data-extraction technique, the nature of the generated data, and exciting avenues of ongoing work.',
+    venue: 'NeurIPS xxxx Workshop on Machine Learning in Public Health',
+    year: '2021',
+    xai: false,
+    bpm: false,
+    hri: false,
+    support: true,
+    advml: false,
+    ai4code: false,
+    vamhri: false,
+    humanai: false,
+    link: 'https://arxiv.org/abs/2110.02311',
+    note: null,
   },
   {
     id: 20215,

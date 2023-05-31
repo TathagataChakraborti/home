@@ -7,7 +7,7 @@ const DATA = [
     title: (
       <>
         <span style={{ color: 'silver' }}>
-          Recent and Upcoming Events | March 21
+          Recent and Upcoming Events | June 2023
         </span>
       </>
     ),
@@ -15,55 +15,24 @@ const DATA = [
     link: null,
   },
   {
+    title: 'Model Acquisition in the Modern Era',
+    description: 'ICAPS 2023 Tutorial',
+    link: 'https://icaps23.icaps-conference.org/program/tutorials/model',
+  },
+  {
+    title: 'How to React to Unsolvable Problems: On Model Space Reasoning and Large Language Models for Automated Planning',
+    description: 'Invited Talk at the ICRA 2023 Workshop on Robot Execution Failures and Failure Management Strategies',
+    link: 'https://robot-failures.github.io/icra2023/schedule',
+  },
+  {
+    title: 'Planning with Mental Models: Explanations and Explainability',
+    description: 'Invited Talk at the ICRA 2023 Workshop on Explainable Robotics',
+    link: 'https://nms.kcl.ac.uk/icra2023.explainablerobotics/#schedule',
+  },
+  {
     title: 'Emergent Process Composition from Natural Language Inputs',
     description: 'BPM 2022 RPA Forum Keynote',
     link: 'https://bpm2022.uni-muenster.de/calls-and-dates/call-for-rpa-forum',
-  },
-  {
-    title: 'Automated Planning and Business Process Management',
-    description: 'BPM 2021 Tutorial',
-    link: 'http://ibm.biz/bpm-2021-tutorial',
-  },
-  {
-    title: 'Explainability of Sequential Decision-Making Models',
-    description: 'XAI Bootscamp at RBCDSAI',
-    link: 'https://rbcdsai.iitm.ac.in/events/rbcdsai-dai-bootcamp/',
-  },
-  {
-    title: 'Designing Goal-Oriented Conversational Agents',
-    description: (
-      <>
-        <span style={{ color: 'silver' }}>Industry Talk at ICAPS 2021</span>
-      </>
-    ),
-    link: 'https://icaps21.icaps-conference.org/Schedule/index.html',
-  },
-  {
-    title: 'A Crash Course in Designing Interpretable Agent Behavior',
-    description: (
-      <>
-        <span style={{ color: 'silver' }}>
-          Invited Talk at SSIR-HRI
-          <br />
-          (HRI) 2021
-        </span>
-      </>
-    ),
-    link: 'https://sites.google.com/view/realworldhri-workshop/home',
-  },
-  {
-    title:
-      'How Symbolic AI and ML can Combine for the Design of Conversational Agents at Scale',
-    description: (
-      <>
-        <span style={{ color: 'silver' }}>
-          Invited Talk at DEEP-DIAL
-          <br />
-          (AAAI) 2021
-        </span>
-      </>
-    ),
-    link: 'https://sites.google.com/view/deep-dial2021/',
   },
   {
     title: (

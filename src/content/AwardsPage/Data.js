@@ -1,4 +1,7 @@
 const DATA = [
+  'IBM 2022 Research Accomplishment Award',
+  'IBM 2022 Annual Employee Equity Award',
+  'IBM 2022 Entrepreneurship Award',
   'IBM Open Source Recognition Program Significant Contributor Award 2021',
   'IBM 2021 Annual Employee Equity Award',
   'IBM 2020 Research Accomplishment Landmark',
