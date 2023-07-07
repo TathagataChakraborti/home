@@ -36,7 +36,6 @@
     "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^7.5.0",
     "gh-pages": "^3.0.0",
-    "husky": "^8.0.3",
     "lint-staged": "^13.2.3",
     "node-sass": "^9.0.0",
     "prettier": "^1.17.0"
@@ -50,7 +49,6 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "husky": {},
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
