@@ -1,10 +1,11 @@
 {
-  "name": "homepage",
+  "name": "home",
+  "homepage": "https://TathagataChakraborti.github.io/home",
   "version": "0.0.0",
   "private": true,
-  "repository": "",
-  "bugs": "",
-  "license": "",
+  "repository": "https://github.com/TathagataChakraborti/home",
+  "bugs": "https://github.com/TathagataChakraborti/home/issues",
+  "license": "MIT",
   "scripts": {
     "build": "react-scripts build",
     "ci-check": "yarn format:diff",
@@ -15,7 +16,8 @@
     "format:staged": "prettier --write",
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "deploy": "rm -rf ./build && yarn build && cf push -f manifest.yml"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@carbon/grid": "^10.17.0",
@@ -28,14 +30,15 @@
     "react-dom": "^16.10.1",
     "react-router-dom": "^5.0.0",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "^4.0.3"
+    "react-scripts": "^5.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^7.5.2",
+    "@commitlint/cli": "^17.6.6",
     "@commitlint/config-conventional": "^7.5.0",
-    "husky": "^1.3.1",
-    "lint-staged": "^8.1.5",
-    "node-sass": "^4.13.1",
+    "gh-pages": "^3.0.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "node-sass": "^9.0.0",
     "prettier": "^1.17.0"
   },
   "eslintConfig": {
@@ -47,8 +50,7 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "husky": {
-  },
+  "husky": {},
   "commitlint": {
     "extends": [
       "@commitlint/config-conventional"
