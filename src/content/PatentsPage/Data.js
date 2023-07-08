@@ -1,5 +1,12 @@
 const DATA = [
   {
+    id: 9,
+    title: 'System and Method for Plan Visualization by Disambiguation',
+    authors:
+      'Jung koo Kang, Michael Katz, Shirin Sohrabi Araghi, and Tathagata Chakraborti',
+    year: '2023',
+  },
+  {
     id: 8,
     title:
       'A System and Method for Interfacing with Planned Operations of an Aggregated Assistant',
@@ -19,8 +26,7 @@ const DATA = [
     id: 6,
     title:
       'A System and Method for Multi-Intent Recognition in Multi-Agent Chatbots',
-    authors:
-      'Burak Aksar, Yara Rizk, and Tathagata Chakraborti',
+    authors: 'Burak Aksar, Yara Rizk, and Tathagata Chakraborti',
     year: '2021',
   },
   {

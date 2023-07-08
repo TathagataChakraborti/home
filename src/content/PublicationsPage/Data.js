@@ -7,7 +7,7 @@ const DATA = [
       'Michael Walker, Thao Phung, Tathagata Chakraborti, Tom Williams, and Daniel Szafir',
     abstract:
       'Virtual, Augmented, and Mixed Reality for Human-Robot Interaction (VAM-HRI) has been gaining considerable attention in research in recent years. However, the HRI community lacks a set of shared terminology and framework for characterizing aspects of mixed reality interfaces, presenting serious problems for future research. Therefore, it is important to have a common set of terms and concepts that can be used to precisely describe and organize the diverse array of work being done within the field. In this paper, we present a novel taxonomic framework for different types of VAM-HRI interfaces, composed of four main categories of virtual design elements (VDEs). We present and justify our taxonomy and explain how its elements have been developed over the last 30 years as well as the current directions VAM-HRI is headed in the coming decade.',
-    venue: 'To appear in the ACM Transactions on Human Robot Interaction',
+    venue: 'ACM Transactions on Human Robot Interaction',
     year: '2023',
     xai: false,
     bpm: false,
@@ -64,13 +64,13 @@ const DATA = [
   },
   {
     id: 20222,
-    title:
-      'MACQ: A Holistic View of Model Acquisition Techniques',
+    title: 'MACQ: A Holistic View of Model Acquisition Techniques',
     authors:
       'Ethan Callanan, Rebecca De Venezia, Victoria Armstrong, Alison Paredes, Tathagata Chakraborti, and Christian Muise',
     abstract:
       'For over three decades, the planning community has explored countless methods for data-driven model acquisition. These range in sophistication (e.g., simple set operations to full-blown reformulations), methodology (e.g., logic-based vs. planing-based), and assumptions (e.g., fully vs. partially observable). With no fewer than 43 publications in the space, it can be overwhelming to understand what approach could or should be applied in a new setting. We present a holistic characterization of the action model acquisition space and further introduce a unifying framework for automated action model acquisition. We have re-implemented some of the landmark approaches in the area, and our characterization of all the techniques offers deep insight into the research opportunities that remain; i.e., those settings where no technique is capable of solving.',
-    venue: 'ICAPS xxxx Workshop on Knowledge Acquisition and Engineering (KEPS) and System Demonstration Track',
+    venue:
+      'ICAPS xxxx Workshop on Knowledge Acquisition and Engineering (KEPS) and System Demonstration Track',
     year: '2022',
     xai: false,
     bpm: true,
@@ -85,8 +85,7 @@ const DATA = [
   },
   {
     id: 20223,
-    title:
-      'TOBY: A tool for exploration of data from academic survey papers',
+    title: 'TOBY: A tool for exploration of data from academic survey papers',
     authors:
       'Tathagata Chakraborti, Jungkoo Kang, Christian Muise, Sarath Sreedhatan, Michael Walker, Daniel Szafir, and Tom Williams',
     abstract:
@@ -101,7 +100,7 @@ const DATA = [
     ai4code: false,
     vamhri: true,
     humanai: true,
-    link: null,
+    link: 'https://arxiv.org/abs/2306.10051',
     note: null,
   },
   {
@@ -130,8 +129,7 @@ const DATA = [
     id: 20216,
     title:
       'COVID-19 India Dataset: Parsing Detailed COVID-19 Data in Daily Health Bulletins from States in India',
-    authors:
-      'Mayank Agarwal, Tathagata Chakraborti, and Sachin Grover',
+    authors: 'Mayank Agarwal, Tathagata Chakraborti, and Sachin Grover',
     abstract:
       'While India remains one of the hotspots of the COVID-19 pandemic, data about the pandemic from the country has proved to be largely inaccessible for use at scale. Much of the data exists in an unstructured form on the web, and limited aspects of such data are available through public APIs maintained manually through volunteer efforts. This has proved to be difficult both in terms of ease of access to detailed data as well as with regards to the maintenance of manual data-keeping over time. This paper reports on a recently launched project aimed at automating the extraction of such data from public health bulletins with the help of a combination of classical PDF parsers as well as the state of the art ML-based documents extraction APIs. In this paper, we will describe the automated data-extraction technique, the nature of the generated data, and exciting avenues of ongoing work.',
     venue: 'NeurIPS xxxx Workshop on Machine Learning in Public Health',
@@ -159,7 +157,7 @@ const DATA = [
     xai: false,
     bpm: true,
     hri: false,
-    support: true,
+    support: false,
     advml: false,
     ai4code: false,
     vamhri: false,
@@ -304,13 +302,13 @@ const DATA = [
     xai: true,
     bpm: true,
     hri: false,
-    support: true,
+    support: false,
     advml: false,
     ai4code: false,
     vamhri: false,
     humanai: true,
     link: 'https://arxiv.org/abs/2011.10707',
-    note: 'http://xaip.mybluemix.net/papers/XAIP-2020_paper_19.pdf',
+    note: null,
   },
   {
     id: 2,
@@ -472,7 +470,7 @@ const DATA = [
     xai: false,
     bpm: true,
     hri: false,
-    support: true,
+    support: false,
     advml: false,
     ai4code: false,
     vamhri: false,

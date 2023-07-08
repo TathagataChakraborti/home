@@ -2,19 +2,22 @@ const DATA = [
   {
     id: 80,
     title: 'Model Acquisition in the Modern Era',
-    venue: 'ICAPS 2023 Tutorial with Prof. Christian Muise',
+    venue: 'ICAPS 2023 Tutorial with Professor Christian Muise',
     link: 'https://icaps23.icaps-conference.org/program/tutorials/model',
   },
   {
     id: 81,
-    title: 'How to React to Unsolvable Problems: On Model Space Reasoning and Large Language Models for Automated Planning',
-    venue: 'Invited Talk at the ICRA 2023 Workshop on Robot Execution Failures and Failure Management Strategies',
+    title:
+      'How to React to Unsolvable Problems: On Model Space Reasoning and Large Language Models for Automated Planning',
+    venue:
+      'Invited Talk at the ICRA 2023 Workshop on Robot Execution Failures and Failure Management Strategies',
     link: 'https://robot-failures.github.io/icra2023/schedule',
   },
   {
     id: 82,
     title: 'Challenges in Recognising and Analysing Execution Failures',
-    venue: 'Panel and Interactive Session at the ICRA 2023 Workshop on Robot Execution Failures and Failure Management Strategies',
+    venue:
+      'Panel and Interactive Session at the ICRA 2023 Workshop on Robot Execution Failures and Failure Management Strategies',
     link: 'https://robot-failures.github.io/icra2023/schedule',
   },
   {
@@ -121,7 +124,7 @@ const DATA = [
     title:
       'Synthesizing Explainable and Deceptive Behavior for Human-AI Interaction',
     venue:
-      'AAAI 2020 Tutorial with Subbarao Kambhampati, Sarath Sreedharan, and Anagha Kulkarni',
+      'AAAI 2020 Tutorial with Professor Subbarao Kambhampati, Sarath Sreedharan, and Anagha Kulkarni',
     link: 'https://yochan-lab.github.io/tutorial/AAAI-2020/',
   },
   {

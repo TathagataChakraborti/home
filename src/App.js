@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './app.scss';
 
-import { Content } from 'carbon-components-react/lib/components/UIShell';
+import { Content } from '@carbon/react';
 import { Route, Switch } from 'react-router-dom';
 
 import PageHeader from './components/PageHeader';
@@ -23,6 +23,7 @@ class App extends Component {
         <Content>
           <Switch>
             <Route exact path="/" component={LandingPage} />
+            <Route exact path="/home" component={LandingPage} />
             <Route exact path="/publications" component={PublicationsPage} />
             <Route exact path="/talks" component={TalksPage} />
             <Route exact path="/awards" component={AwardsPage} />

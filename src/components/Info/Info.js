@@ -1,6 +1,5 @@
 import React from 'react';
 import copy from 'copy-to-clipboard';
-
 import { Link as NewLink } from 'react-router-dom';
 import {
   StructuredListWrapper,
@@ -14,13 +13,9 @@ import {
   Link,
   Tag,
   CodeSnippet,
-} from 'carbon-components-react';
+} from '@carbon/react';
 
-import { Download16 } from '@carbon/icons-react';
-import { Copy16 } from '@carbon/icons-react';
-import { Quotes16 } from '@carbon/icons-react';
-import { Trophy16 } from '@carbon/icons-react';
-import { VideoAdd16 } from '@carbon/icons-react';
+import { Download, Copy, Quotes, Trophy, VideoAdd } from '@carbon/icons-react';
 
 const LinkList = ({
   primaryUrlName,
@@ -49,10 +44,8 @@ const generateImageUrl = (imageUrl, imageType) => {
 
 const Project = props => {
   return (
-    <Tile
-      className="bx--col-lg-16"
-      style={{ margin: '10px', backgroundColor: 'white' }}>
-      <div className="bx--col-lg-16">
+    <Tile style={{ margin: '10px', backgroundColor: 'white' }}>
+      <div>
         {props.props.image && (
           <div style={{ textAlign: 'center' }}>
             <img
@@ -85,7 +78,7 @@ const Project = props => {
                 state: { tags: props.props.tags },
               }}
               className="no-decoration-enforce">
-              <Button kind="secondary" size="field">
+              <Button kind="secondary" size="md">
                 Learn More
               </Button>
               <br />
@@ -102,7 +95,7 @@ const Project = props => {
                 state: { tags: props.props.tags },
               }}
               className="no-decoration-enforce">
-              <Button kind="secondary" size="small">
+              <Button kind="secondary" size="md">
                 {props.props.name}
               </Button>
               <br />
@@ -117,7 +110,7 @@ const Project = props => {
               href={props.props.link}
               target="_blank"
               className="no-decoration-enforce">
-              <Button kind="secondary" size="small">
+              <Button kind="secondary" size="md">
                 {props.props.name}
               </Button>
             </Link>
@@ -133,7 +126,7 @@ const Project = props => {
 const Project3 = props => {
   return (
     <Tile
-      className="bx--col-lg-16 tertiary-project"
+      className="tertiary-project"
       style={{ margin: '10px', backgroundColor: 'white' }}
       onClick={() => window.open(props.props.link, '_blank')}>
       <div className="bx--col-lg-16">
@@ -209,7 +202,7 @@ const Paper = props => {
             {props.props.award && (
               <>
                 <span style={{ color: '#9f1853' }}>
-                  <Trophy16 /> {props.props.award}
+                  <Trophy /> {props.props.award}
                 </span>
                 <br />
                 <br />
@@ -218,6 +211,7 @@ const Paper = props => {
             <div>{props.props.abstract}</div>
             <br />
             <div>
+              {props.props.nlp && <Tag type="purple"> NLP </Tag>}
               {props.props.xai && <Tag type="magenta"> XAI </Tag>}
               {props.props.bpm && <Tag type="purple"> BPM </Tag>}
               {props.props.hri && <Tag type="teal"> HRI </Tag>}
@@ -230,7 +224,7 @@ const Paper = props => {
                 <Link href={props.props.link} target="_blank">
                   <Button kind="ghost" size="small">
                     {' '}
-                    <Download16 />{' '}
+                    <Download />{' '}
                   </Button>
                 </Link>
               )}
@@ -238,19 +232,19 @@ const Paper = props => {
                 <Link href={props.props.video} target="_blank">
                   <Button kind="ghost" size="small">
                     {' '}
-                    <VideoAdd16 />{' '}
+                    <VideoAdd />{' '}
                   </Button>
                 </Link>
               )}
               <CodeSnippet
                 type="inline"
                 onClick={copyInfo.bind(this, props.props)}>
-                <Copy16 />
+                <Copy />
               </CodeSnippet>
               <CodeSnippet
                 type="inline"
                 onClick={copyTex.bind(this, props.props)}>
-                <Quotes16 />
+                <Quotes />
               </CodeSnippet>
             </div>
           </StructuredListCell>
@@ -263,10 +257,11 @@ const Paper = props => {
 const ProgressStepNew = props => {
   return (
     <ProgressStep
-      style={{ marginBottom: '20px', minHeight: '0' }}
-      current={!!props.props.link}
+      style={{ marginBottom: '20px', minHeight: '0', width: '85%' }}
+      complete={props.props.complete}
+      current={props.props.current}
       label={
-        <>
+        <div style={{ marginBottom: '5px' }}>
           {!props.props.link && (
             <span style={{ color: 'white' }}>{props.props.title}</span>
           )}
@@ -278,9 +273,11 @@ const ProgressStepNew = props => {
               {props.props.title}
             </Link>
           )}
-        </>
+        </div>
       }
-      secondaryLabel={props.props.description}
+      secondaryLabel={
+        <span style={{ color: 'silver' }}>{props.props.description}</span>
+      }
     />
   );
 };

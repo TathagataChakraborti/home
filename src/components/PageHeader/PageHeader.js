@@ -1,33 +1,32 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import HeaderContainer from 'carbon-components-react/lib/components/UIShell/HeaderContainer';
 import {
   Header,
   HeaderMenuButton,
   HeaderName,
   HeaderNavigation,
   HeaderMenuItem,
-  HeaderSideNavItems,
   SkipToContent,
   SideNav,
   SideNavItems,
   SideNavLink,
-} from 'carbon-components-react/lib/components/UIShell';
+  HeaderContainer,
+  Theme,
+} from '@carbon/react';
 import {
-  Home20,
-  Microscope20,
-  Report20,
-  Rule20,
-  PresentationFile20,
-  Trophy20,
-  Bullhorn20,
-  Education20,
+  Home,
+  Microscope,
+  Report,
+  Rule,
+  PresentationFile,
+  Trophy,
+  Bullhorn,
+  Education,
 } from '@carbon/icons-react';
 
 class PageHeader extends React.Component {
   constructor(props) {
     super();
-    // this.history = useHistory();
     this.state = {
       current: 'home',
       home: true,
@@ -57,13 +56,13 @@ class PageHeader extends React.Component {
     return (
       <HeaderContainer
         render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-          <>
+          <Theme theme={this.state.current === 'home' && 'g100'}>
             <Header aria-label="">
               <SkipToContent />
               <HeaderMenuButton
                 onClick={onClickSideNavExpand}
                 isActive={isSideNavExpanded}
-                aria-label=""
+                aria-label="Header Area"
               />
               <HeaderName element={Link} to="/" prefix="Tathagata's">
                 Home
@@ -74,89 +73,87 @@ class PageHeader extends React.Component {
                 </HeaderMenuItem>
               </HeaderNavigation>
               <SideNav
-                aria-label=""
+                aria-label="Navigation Options"
                 expanded={isSideNavExpanded}
                 isPersistent={true}
                 isRail={true}>
                 <SideNavItems>
-                  <HeaderSideNavItems>
-                    <SideNavLink
-                      element={Link}
-                      to="/"
-                      renderIcon={Home20}
-                      children="Home"
-                      onClick={this.onClickTab.bind(this, 'home')}
-                      isActive={this.state.home}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/research"
-                      renderIcon={Microscope20}
-                      children="Research"
-                      onClick={this.onClickTab.bind(this, 'research')}
-                      isActive={this.state.research}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/publications"
-                      renderIcon={Report20}
-                      children="Publications"
-                      onClick={this.onClickTab.bind(this, 'publications')}
-                      isActive={this.state.publications}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/thesis"
-                      renderIcon={Education20}
-                      children="Thesis"
-                      onClick={this.onClickTab.bind(this, 'thesis')}
-                      isActive={this.state.thesis}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/patents"
-                      renderIcon={Rule20}
-                      children="Patents"
-                      onClick={this.onClickTab.bind(this, 'patents')}
-                      isActive={this.state.patents}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/talks"
-                      renderIcon={PresentationFile20}
-                      children="Talks"
-                      onClick={this.onClickTab.bind(this, 'talks')}
-                      isActive={this.state.talks}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/awards"
-                      renderIcon={Trophy20}
-                      children="Awards"
-                      onClick={this.onClickTab.bind(this, 'awards')}
-                      isActive={this.state.awards}
-                      large
-                    />
-                    <SideNavLink
-                      element={Link}
-                      to="/news"
-                      renderIcon={Bullhorn20}
-                      children="News"
-                      onClick={this.onClickTab.bind(this, 'news')}
-                      isActive={this.state.news}
-                      large
-                    />
-                  </HeaderSideNavItems>
+                  <SideNavLink
+                    element={Link}
+                    to="/"
+                    renderIcon={Home}
+                    children="Home"
+                    onClick={this.onClickTab.bind(this, 'home')}
+                    isActive={this.state.home}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/research"
+                    renderIcon={Microscope}
+                    children="Research"
+                    onClick={this.onClickTab.bind(this, 'research')}
+                    isActive={this.state.research}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/publications"
+                    renderIcon={Report}
+                    children="Publications"
+                    onClick={this.onClickTab.bind(this, 'publications')}
+                    isActive={this.state.publications}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/thesis"
+                    renderIcon={Education}
+                    children="Thesis"
+                    onClick={this.onClickTab.bind(this, 'thesis')}
+                    isActive={this.state.thesis}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/patents"
+                    renderIcon={Rule}
+                    children="Patents"
+                    onClick={this.onClickTab.bind(this, 'patents')}
+                    isActive={this.state.patents}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/talks"
+                    renderIcon={PresentationFile}
+                    children="Talks"
+                    onClick={this.onClickTab.bind(this, 'talks')}
+                    isActive={this.state.talks}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/awards"
+                    renderIcon={Trophy}
+                    children="Awards"
+                    onClick={this.onClickTab.bind(this, 'awards')}
+                    isActive={this.state.awards}
+                    large
+                  />
+                  <SideNavLink
+                    element={Link}
+                    to="/news"
+                    renderIcon={Bullhorn}
+                    children="News"
+                    onClick={this.onClickTab.bind(this, 'news')}
+                    isActive={this.state.news}
+                    large
+                  />
                 </SideNavItems>
               </SideNav>
             </Header>
-          </>
+          </Theme>
         )}
       />
     );

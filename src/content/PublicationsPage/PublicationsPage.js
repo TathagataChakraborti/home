@@ -1,6 +1,6 @@
 import React from 'react';
 import { Paper } from '../../components/Info';
-import { Search, Tag } from 'carbon-components-react';
+import { Search, Tag, Grid, Column } from '@carbon/react';
 
 import DATA from './Data.js';
 
@@ -13,6 +13,8 @@ class PublicationsPage extends React.Component {
       data: DATA,
       number: DATA.length,
       filter: {
+        planning: false,
+        nlp: false,
         xai: false,
         bpm: false,
         hri: false,
@@ -57,6 +59,8 @@ class PublicationsPage extends React.Component {
       });
 
       [
+        'planning',
+        'nlp',
         'xai',
         'bpm',
         'hri',
@@ -134,115 +138,131 @@ class PublicationsPage extends React.Component {
 
   render() {
     return (
-      <div
-        className="bx--grid bx--grid--full-width landing-page landing-page__banner"
-        style={{ minHeight: '100vh' }}>
-        <div className="offset">
-          <div className="bx--col-lg-16">
-            <div className="bx--row publications-page__tab-content">
-              <Search
-                size="xl"
-                id="explore"
-                placeholder="Explore"
-                labelText=""
-                value={this.state.search}
-                onChange={this.handleInputChange.bind(this)}
-              />
+      <div className="offset">
+        <Grid>
+          <Column lg={16} md={8} sm={4}>
+            <Search
+              size="lg"
+              id="explore"
+              placeholder="Explore"
+              labelText=""
+              value={this.state.search}
+              onChange={this.handleInputChange.bind(this)}
+            />
+
+            <div style={{ marginTop: '10px', marginBottom: '50px' }}>
+              <Tag
+                filter={this.state.filter.humanai}
+                type="green"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'humanai')}
+                onClick={this.onClickTag.bind(this, 'humanai')}
+                name="humanai">
+                {' '}
+                Human-AI{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.planning}
+                type="green"
+                className="explore-tags planning"
+                onClose={this.onCloseTag.bind(this, 'planning')}
+                onClick={this.onClickTag.bind(this, 'planning')}
+                name="planning">
+                {' '}
+                Planning{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.nlp}
+                type="magenta"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'nlp')}
+                onClick={this.onClickTag.bind(this, 'nlp')}
+                name="nlp">
+                {' '}
+                NLP{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.bpm}
+                type="purple"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'bpm')}
+                onClick={this.onClickTag.bind(this, 'bpm')}
+                name="bpm">
+                {' '}
+                BPM{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.ai4code}
+                type="cyan"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'ai4code')}
+                onClick={this.onClickTag.bind(this, 'ai4code')}
+                name="ai4code">
+                {' '}
+                AI4Code{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.xai}
+                type="teal"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'xai')}
+                onClick={this.onClickTag.bind(this, 'xai')}
+                name="xai">
+                {' '}
+                XAI{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.vamhri}
+                type="red"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'vamhri')}
+                onClick={this.onClickTag.bind(this, 'vamhri')}
+                name="vamhri">
+                {' '}
+                Mixed Reality{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.hri}
+                type="red"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'hri')}
+                onClick={this.onClickTag.bind(this, 'hri')}
+                name="hri">
+                {' '}
+                HRI{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.support}
+                type="warm-gray"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'support')}
+                onClick={this.onClickTag.bind(this, 'support')}
+                name="support">
+                {' '}
+                Decision Support{' '}
+              </Tag>
+              <Tag
+                filter={this.state.filter.advml}
+                type="warm-gray"
+                className="explore-tags"
+                onClose={this.onCloseTag.bind(this, 'advml')}
+                onClick={this.onClickTag.bind(this, 'advml')}
+                name="advml">
+                {' '}
+                Adv ML{' '}
+              </Tag>
+              <Tag type="warm-gray" className="explore-tags number-tag">
+                {this.state.number}
+              </Tag>
             </div>
-          </div>
 
-          <div style={{ marginBottom: '50px' }}>
-            <Tag
-              filter={this.state.filter.xai}
-              type="magenta"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'xai')}
-              onClick={this.onClickTag.bind(this, 'xai')}
-              name="xai">
-              {' '}
-              XAI{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.bpm}
-              type="purple"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'bpm')}
-              onClick={this.onClickTag.bind(this, 'bpm')}
-              name="bpm">
-              {' '}
-              BPM{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.hri}
-              type="teal"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'hri')}
-              onClick={this.onClickTag.bind(this, 'hri')}
-              name="hri">
-              {' '}
-              HRI{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.support}
-              type="blue"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'support')}
-              onClick={this.onClickTag.bind(this, 'support')}
-              name="support">
-              {' '}
-              Support{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.advml}
-              type="green"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'advml')}
-              onClick={this.onClickTag.bind(this, 'advml')}
-              name="advml">
-              {' '}
-              Adv ML{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.ai4code}
-              type="cyan"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'ai4code')}
-              onClick={this.onClickTag.bind(this, 'ai4code')}
-              name="ai4code">
-              {' '}
-              AI4Code{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.vamhri}
-              type="red"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'vamhri')}
-              onClick={this.onClickTag.bind(this, 'vamhri')}
-              name="vamhri">
-              {' '}
-              Mixed Reality{' '}
-            </Tag>
-            <Tag
-              filter={this.state.filter.humanai}
-              type="warm-gray"
-              className="explore-tags"
-              onClose={this.onCloseTag.bind(this, 'humanai')}
-              onClick={this.onClickTag.bind(this, 'humanai')}
-              name="humanai">
-              {' '}
-              Human-AI{' '}
-            </Tag>
-            <Tag type="warm-gray" className="explore-tags number-tag">
-              {this.state.number}
-            </Tag>
-          </div>
-
-          {this.state.data.map((item, key) => (
-            <React.Fragment key={key}>
-              {item.render && <Paper props={item} />}
-            </React.Fragment>
-          ))}
-        </div>
+            {this.state.data.map((item, key) => (
+              <React.Fragment key={key}>
+                {item.render && <Paper props={item} />}
+              </React.Fragment>
+            ))}
+          </Column>
+        </Grid>
       </div>
     );
   }

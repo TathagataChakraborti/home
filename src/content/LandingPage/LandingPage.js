@@ -1,5 +1,5 @@
 import React from 'react';
-import { ProgressIndicator } from 'carbon-components-react';
+import { Grid, Column, ProgressIndicator } from '@carbon/react';
 import { ProgressStepNew } from '../../components/Info';
 
 import DATA from './Data.js';
@@ -15,7 +15,6 @@ class LandingPage extends React.Component {
   render() {
     return (
       <div
-        className="bx--grid bx--grid--full-width landing-page"
         style={{
           width: '100%',
           height: '100vh',
@@ -24,25 +23,17 @@ class LandingPage extends React.Component {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}>
-        <div className="bx--row">
-          <div
-            className="bx--col-lg-4 offset"
-            style={{
-              backgroundColor: 'rgba(0, 0, 0, 0.7)',
-              padding: '55px',
-              minHeight: '100vh',
-            }}>
-            <div className="some-container">
-              <ProgressIndicator vertical currentIndex={1}>
-                {DATA.map((item, key) => (
-                  <React.Fragment key={key}>
-                    <ProgressStepNew props={item} />
-                  </React.Fragment>
-                ))}
-              </ProgressIndicator>
-            </div>
-          </div>
-        </div>
+        <Grid>
+          <Column lg={4} md={4} sm={4} className="offset-progress-area">
+            <ProgressIndicator vertical currentIndex={1}>
+              {DATA.map((item, key) => (
+                <React.Fragment key={key}>
+                  <ProgressStepNew props={item} />
+                </React.Fragment>
+              ))}
+            </ProgressIndicator>
+          </Column>
+        </Grid>
       </div>
     );
   }

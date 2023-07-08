@@ -1,27 +1,8 @@
-.publications-page__tab-content {
-  padding-top: $layout-01;
-  padding-bottom: $layout-01;
-}
-
-.publications-page__publications-list-header {
-  color: $visited-link;
-  font-weight: normal;
-}
-
-.bx--structured-list-row.no-border {
-  border: none;
-}
-
-.bx--structured-list.low-margin {
-  margin-bottom: 0;
-}
-
 .explore-tags {
-  cursor: pointer;
-}
-
-.offset {
-  margin-left: 50px;
+  border: none;
+  border-radius: 0;
+  margin-right: 10px;
+  margin-left: 0;
 }
 
 .number-tag {
@@ -31,4 +12,7 @@
 
 .number-tag:hover {
   cursor: default;
+}
+
+.planning {
 }
