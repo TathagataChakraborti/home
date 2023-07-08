@@ -11,7 +11,7 @@
     "clean": "yarn cache clean && yarn install",
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "start": "react-scripts start",
-    "predeploy": "npm run build",
+    "predeploy": "yarn build",
     "deploy": "gh-pages -d build"
   },
   "dependencies": {
