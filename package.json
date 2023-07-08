@@ -1,6 +1,6 @@
 {
   "name": "home",
-  "homepage": "https://TathagataChakraborti.github.io/home",
+  "homepage": "https://tchakra2.com",
   "version": "0.0.0",
   "private": true,
   "repository": "https://github.com/TathagataChakraborti/home",
@@ -12,7 +12,9 @@
     "format": "prettier --write \"**/*.{js,md,scss}\"",
     "start": "react-scripts start",
     "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "dependencies": {
     "@carbon/react": "^1.31.3",
