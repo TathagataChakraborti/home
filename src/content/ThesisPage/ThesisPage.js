@@ -136,7 +136,7 @@ class ThesisPage extends React.Component {
                     | Arizona State University
                   </StructuredListCell>
                 </StructuredListRow>
-                <StructuredListRow className="no-border">
+                <StructuredListRow>
                   <StructuredListCell>
                     <Link
                       href="http://www.public.asu.edu/~yzhan442/"
@@ -172,7 +172,7 @@ class ThesisPage extends React.Component {
               href="https://repository.asu.edu/items/51791"
               target="_blank"
               className="no-decoration-enforce"
-              size="md"
+              size="sm"
               kind="secondary">
               Read More
             </Button>

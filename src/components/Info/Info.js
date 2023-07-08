@@ -2,11 +2,6 @@ import React from 'react';
 import copy from 'copy-to-clipboard';
 import { Link as NewLink } from 'react-router-dom';
 import {
-  StructuredListWrapper,
-  StructuredListHead,
-  StructuredListBody,
-  StructuredListRow,
-  StructuredListCell,
   ProgressStep,
   Button,
   Tile,
@@ -165,7 +160,7 @@ const copyTex = (data, e) => {
     .replace('[TITLE]', data.title.replaceAll(' ', '-').toLowerCase());
 
   var tex = '@inproceedings{[ID],\n author = {[AUTHORS]},\n title = {{[TITLE]}},\n booktitle = {[VENUE]},\n year = {[YEAR]}\n}'
-    .replace('[ID]', id)
+    .replace('[ID]', id.slice(0, 25))
     .replace(
       '[AUTHORS]',
       data.authors.replaceAll(', and', ',').replaceAll(',', ' and')
@@ -179,79 +174,6 @@ const copyTex = (data, e) => {
 
 const createVenue = (venue, year) => {
   return venue.replace('xxxx', year);
-};
-
-const Paper = props => {
-  return (
-    <StructuredListWrapper
-      style={{ marginBottom: '0' }}
-      ariaLabel="Structured list">
-      <StructuredListHead>
-        <StructuredListRow>
-          <StructuredListCell head>
-            {props.props.title} |{' '}
-            {createVenue(props.props.venue, props.props.year)}
-            <br />
-            <em style={{ fontWeight: 'normal' }}>by {props.props.authors}.</em>
-          </StructuredListCell>
-        </StructuredListRow>
-      </StructuredListHead>
-      <StructuredListBody>
-        <StructuredListRow className="no-border">
-          <StructuredListCell>
-            {props.props.award && (
-              <>
-                <span style={{ color: '#9f1853' }}>
-                  <Trophy /> {props.props.award}
-                </span>
-                <br />
-                <br />
-              </>
-            )}
-            <div>{props.props.abstract}</div>
-            <br />
-            <div>
-              {props.props.nlp && <Tag type="purple"> NLP </Tag>}
-              {props.props.xai && <Tag type="magenta"> XAI </Tag>}
-              {props.props.bpm && <Tag type="purple"> BPM </Tag>}
-              {props.props.hri && <Tag type="teal"> HRI </Tag>}
-              {props.props.support && <Tag type="blue"> Support </Tag>}
-              {props.props.advml && <Tag type="green"> Adv ML </Tag>}
-              {props.props.ai4code && <Tag type="cyan"> AI4Code </Tag>}
-              {props.props.vamhri && <Tag type="red"> Mixed Reality </Tag>}
-              {props.props.humanai && <Tag type="warm-gray"> Human & AI </Tag>}
-              {props.props.link && (
-                <Link href={props.props.link} target="_blank">
-                  <Button kind="ghost" size="small">
-                    {' '}
-                    <Download />{' '}
-                  </Button>
-                </Link>
-              )}
-              {props.props.video && (
-                <Link href={props.props.video} target="_blank">
-                  <Button kind="ghost" size="small">
-                    {' '}
-                    <VideoAdd />{' '}
-                  </Button>
-                </Link>
-              )}
-              <CodeSnippet
-                type="inline"
-                onClick={copyInfo.bind(this, props.props)}>
-                <Copy />
-              </CodeSnippet>
-              <CodeSnippet
-                type="inline"
-                onClick={copyTex.bind(this, props.props)}>
-                <Quotes />
-              </CodeSnippet>
-            </div>
-          </StructuredListCell>
-        </StructuredListRow>
-      </StructuredListBody>
-    </StructuredListWrapper>
-  );
 };
 
 const ProgressStepNew = props => {
@@ -282,4 +204,12 @@ const ProgressStepNew = props => {
   );
 };
 
-export { LinkList, Project, Project3, ProgressStepNew, Paper };
+export {
+  createVenue,
+  copyInfo,
+  copyTex,
+  LinkList,
+  Project,
+  Project3,
+  ProgressStepNew,
+};

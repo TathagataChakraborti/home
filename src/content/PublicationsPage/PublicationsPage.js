@@ -1,8 +1,111 @@
 import React from 'react';
-import { Paper } from '../../components/Info';
-import { Search, Tag, Grid, Column } from '@carbon/react';
+import { createVenue, copyTex, copyInfo } from '../../components/Info';
+import {
+  Grid,
+  Column,
+  Theme,
+  Search,
+  Tag,
+  StructuredListWrapper,
+  StructuredListHead,
+  StructuredListBody,
+  StructuredListRow,
+  StructuredListCell,
+  Link,
+  Button,
+  CodeSnippet,
+} from '@carbon/react';
+import {
+  Download,
+  Copy,
+  Quotes,
+  TrophyFilled,
+  VideoAdd,
+} from '@carbon/icons-react';
 
-import DATA from './Data.js';
+import { DATA, TAGS } from './Data.js';
+
+const Paper = props => {
+  return (
+    <StructuredListWrapper className="paper-card" ariaLabel="Structured list">
+      <StructuredListHead>
+        <StructuredListRow>
+          <StructuredListCell head>
+            <div>
+              {props.props.title}
+              <span style={{ color: 'darkred' }}>
+                {' '}
+                | {createVenue(props.props.venue, props.props.year)}
+              </span>
+            </div>
+            <div style={{ marginTop: '5px', fontWeight: 'normal' }}>
+              <em>by {props.props.authors}.</em>
+            </div>
+          </StructuredListCell>
+        </StructuredListRow>
+      </StructuredListHead>
+      <StructuredListBody>
+        <StructuredListRow className="no-border">
+          <StructuredListCell>
+            {props.props.award && (
+              <>
+                <span>
+                  <TrophyFilled className="gold-trophy" /> {props.props.award}
+                </span>
+                <br />
+                <br />
+              </>
+            )}
+            <div>{props.props.abstract}</div>
+            <br />
+            <div>
+              {Object.keys(TAGS).map((item, key) => (
+                <React.Fragment key={key}>
+                  {props.props.tags.indexOf(item) > -1 && (
+                    <Tag type="purple" className={'explore-tags ' + item}>
+                      {TAGS[item]}
+                    </Tag>
+                  )}
+                </React.Fragment>
+              ))}
+
+              {props.props.link && (
+                <Button
+                  href={props.props.link}
+                  target="_blank"
+                  kind="ghost"
+                  size="sm">
+                  {' '}
+                  <Download />{' '}
+                </Button>
+              )}
+              {props.props.video && (
+                <Button
+                  href={props.props.video}
+                  target="_blank"
+                  kind="ghost"
+                  size="sm">
+                  {' '}
+                  <VideoAdd />{' '}
+                </Button>
+              )}
+              <CodeSnippet
+                type="inline"
+                onClick={copyInfo.bind(this, props.props)}>
+                <Copy />
+              </CodeSnippet>
+              <CodeSnippet
+                type="inline"
+                onClick={copyTex.bind(this, props.props)}>
+                <Quotes />
+              </CodeSnippet>
+            </div>
+          </StructuredListCell>
+        </StructuredListRow>
+      </StructuredListBody>
+    </StructuredListWrapper>
+  );
+};
 
 class PublicationsPage extends React.Component {
   constructor(props) {
@@ -12,18 +115,10 @@ class PublicationsPage extends React.Component {
       search: '',
       data: DATA,
       number: DATA.length,
-      filter: {
-        planning: false,
-        nlp: false,
-        xai: false,
-        bpm: false,
-        hri: false,
-        support: false,
-        advml: false,
-        ai4code: false,
-        vamhri: false,
-        humanai: false,
-      },
+      filter: Object.keys(TAGS).reduce(function(obj, entry) {
+        obj[entry] = false;
+        return obj;
+      }, {}),
     };
 
     if (props.location.state) {
@@ -58,31 +153,13 @@ class PublicationsPage extends React.Component {
         item.render = flag && item.render;
       });
 
-      [
-        'planning',
-        'nlp',
-        'xai',
-        'bpm',
-        'hri',
-        'support',
-        'advml',
-        'ai4code',
-        'vamhri',
-        'humanai',
-      ].forEach(function(tag, i) {
-        if (currentState.filter[tag]) item.render = item.render && item[tag];
+      Object.keys(TAGS).forEach(function(tag, i) {
+        if (currentState.filter[tag])
+          item.render = item.render && item.tags.indexOf(tag) > -1;
       });
 
       if (item.render) cache.push(key);
     });
-
-    if (currentState.filter.lucky) {
-      var randomID = cache[Math.floor(Math.random() * cache.length)];
-
-      currentData.forEach(function(item, key) {
-        item.render = key === randomID;
-      });
-    }
 
     var count = 0;
     currentData.forEach(function(item, key) {
@@ -138,132 +215,46 @@ class PublicationsPage extends React.Component {
 
   render() {
     return (
-      <div className="offset">
-        <Grid>
-          <Column lg={16} md={8} sm={4}>
-            <Search
-              size="lg"
-              id="explore"
-              placeholder="Explore"
-              labelText=""
-              value={this.state.search}
-              onChange={this.handleInputChange.bind(this)}
-            />
+      <Theme theme="g10">
+        <div className="offset">
+          <Grid>
+            <Column lg={16} md={8} sm={4}>
+              <Search
+                light
+                size="lg"
+                id="explore"
+                placeholder="Explore"
+                labelText=""
+                value={this.state.search}
+                onChange={this.handleInputChange.bind(this)}
+              />
 
-            <div style={{ marginTop: '10px', marginBottom: '50px' }}>
-              <Tag
-                filter={this.state.filter.humanai}
-                type="green"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'humanai')}
-                onClick={this.onClickTag.bind(this, 'humanai')}
-                name="humanai">
-                {' '}
-                Human-AI{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.planning}
-                type="green"
-                className="explore-tags planning"
-                onClose={this.onCloseTag.bind(this, 'planning')}
-                onClick={this.onClickTag.bind(this, 'planning')}
-                name="planning">
-                {' '}
-                Planning{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.nlp}
-                type="magenta"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'nlp')}
-                onClick={this.onClickTag.bind(this, 'nlp')}
-                name="nlp">
-                {' '}
-                NLP{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.bpm}
-                type="purple"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'bpm')}
-                onClick={this.onClickTag.bind(this, 'bpm')}
-                name="bpm">
-                {' '}
-                BPM{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.ai4code}
-                type="cyan"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'ai4code')}
-                onClick={this.onClickTag.bind(this, 'ai4code')}
-                name="ai4code">
-                {' '}
-                AI4Code{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.xai}
-                type="teal"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'xai')}
-                onClick={this.onClickTag.bind(this, 'xai')}
-                name="xai">
-                {' '}
-                XAI{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.vamhri}
-                type="red"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'vamhri')}
-                onClick={this.onClickTag.bind(this, 'vamhri')}
-                name="vamhri">
-                {' '}
-                Mixed Reality{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.hri}
-                type="red"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'hri')}
-                onClick={this.onClickTag.bind(this, 'hri')}
-                name="hri">
-                {' '}
-                HRI{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.support}
-                type="warm-gray"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'support')}
-                onClick={this.onClickTag.bind(this, 'support')}
-                name="support">
-                {' '}
-                Decision Support{' '}
-              </Tag>
-              <Tag
-                filter={this.state.filter.advml}
-                type="warm-gray"
-                className="explore-tags"
-                onClose={this.onCloseTag.bind(this, 'advml')}
-                onClick={this.onClickTag.bind(this, 'advml')}
-                name="advml">
-                {' '}
-                Adv ML{' '}
-              </Tag>
-              <Tag type="warm-gray" className="explore-tags number-tag">
-                {this.state.number}
-              </Tag>
-            </div>
+              <div style={{ marginTop: '10px', marginBottom: '50px' }}>
+                {Object.keys(TAGS).map((item, key) => (
+                  <Tag
+                    key={key}
+                    filter={this.state.filter[item]}
+                    type="cool-gray"
+                    className={'explore-tags ' + item}
+                    onClose={this.onCloseTag.bind(this, item)}
+                    onClick={this.onClickTag.bind(this, item)}>
+                    {TAGS[item]}
+                  </Tag>
+                ))}
+                <Tag type="warm-gray" className="explore-tags number-tag">
+                  {this.state.number}
+                </Tag>
+              </div>
 
-            {this.state.data.map((item, key) => (
-              <React.Fragment key={key}>
-                {item.render && <Paper props={item} />}
-              </React.Fragment>
-            ))}
-          </Column>
-        </Grid>
-      </div>
+              {this.state.data.map((item, key) => (
+                <React.Fragment key={key}>
+                  {item.render && <Paper props={item} />}
+                </React.Fragment>
+              ))}
+            </Column>
+          </Grid>
+        </div>
+      </Theme>
     );
   }
 }

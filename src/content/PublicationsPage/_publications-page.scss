@@ -1,3 +1,16 @@
+.paper-card {
+  background-color: white;
+  margin-bottom: 30px;
+}
+
+.paper-card * {
+  border: none;
+}
+
+.cds--structured-list-row.no-border {
+  border: none;
+}
+
 .explore-tags {
   border: none;
   border-radius: 0;
@@ -14,5 +27,42 @@
   cursor: default;
 }
 
+.humanai {
+  background-color: #c8ffa9;
+}
+
 .planning {
+  background-color: #ffdfb4;
+}
+
+.nlp {
+  background-color: #e8daff;
+}
+
+.xai {
+  background-color: #ffd5e8;
+}
+
+.bpm {
+  background-color: #fffc98;
+}
+
+.ai4code {
+  background-color: #a7f0ba;
+}
+
+.hri {
+  background-color: #bae6ff;
+}
+
+.vamhri {
+  background-color: #d0e1ff;
+}
+
+.support {
+  background-color: #9df0f0;
+}
+
+.advml {
+  background-color: #ffe2c3;
 }
