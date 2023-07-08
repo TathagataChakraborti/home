@@ -1,8 +1,41 @@
 import React from 'react';
-import { Grid, Column, ProgressIndicator } from '@carbon/react';
-import { ProgressStepNew } from '../../components/Info';
+import {
+  Grid,
+  Column,
+  Link,
+  ProgressStep,
+  ProgressIndicator,
+} from '@carbon/react';
 
 import DATA from './Data.js';
+
+const ProgressStepNew = props => {
+  return (
+    <ProgressStep
+      style={{ marginBottom: '20px', minHeight: '0', width: '85%' }}
+      complete={props.props.complete}
+      current={props.props.current}
+      label={
+        <div style={{ marginBottom: '5px' }}>
+          {!props.props.link && (
+            <span style={{ color: 'white' }}>{props.props.title}</span>
+          )}
+          {props.props.link && (
+            <Link
+              style={{ color: 'white' }}
+              href={props.props.link}
+              target="_blank">
+              {props.props.title}
+            </Link>
+          )}
+        </div>
+      }
+      secondaryLabel={
+        <span style={{ color: 'silver' }}>{props.props.description}</span>
+      }
+    />
+  );
+};
 
 class LandingPage extends React.Component {
   constructor(props) {

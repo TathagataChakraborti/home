@@ -11,7 +11,6 @@ import {
   StructuredListBody,
   StructuredListRow,
   StructuredListCell,
-  Link,
   Button,
   CodeSnippet,
 } from '@carbon/react';
