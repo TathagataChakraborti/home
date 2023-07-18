@@ -13,6 +13,7 @@ import {
 } from '@carbon/react';
 
 import { TrophyFilled } from '@carbon/icons-react';
+import { TAGS } from '../PublicationsPage/Data.js';
 
 class ThesisPage extends React.Component {
   constructor(props) {
@@ -59,29 +60,13 @@ class ThesisPage extends React.Component {
             <br />
             <br />
 
-            <Tag type="magenta" name="xai">
-              {' '}
-              XAI{' '}
-            </Tag>
-            <Tag type="teal" name="hri">
-              {' '}
-              HRI{' '}
-            </Tag>
-            <Tag type="blue" name="support">
-              {' '}
-              Support{' '}
-            </Tag>
-            <Tag type="red" name="vamhri">
-              {' '}
-              Mixed Reality{' '}
-            </Tag>
-            <Tag type="warm-gray" name="humanai">
-              {' '}
-              Human-AI{' '}
-            </Tag>
-
-            <br />
-            <br />
+            {['xai', 'hri', 'support', 'vamhri', 'humanai', 'planning'].map(
+              item => (
+                <Tag type="gray" name={item} className={item + ' explore-tags'}>
+                  {TAGS[item]}
+                </Tag>
+              )
+            )}
           </Column>
           <Column lg={4} md={4} sm={4}>
             <StructuredListWrapper className="low-margin">

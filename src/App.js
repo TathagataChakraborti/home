@@ -5,15 +5,84 @@ import { Content } from '@carbon/react';
 import { Route, Switch } from 'react-router-dom';
 
 import PageHeader from './components/PageHeader';
-
-import AwardsPage from './content/AwardsPage';
-import TalksPage from './content/TalksPage';
-import LandingPage from './content/LandingPage';
-import NewsPage from './content/NewsPage';
-import PatentsPage from './content/PatentsPage';
-import PublicationsPage from './content/PublicationsPage';
+import HomePage from './content/HomePage';
 import ResearchPage from './content/ResearchPage';
+import PublicationsPage from './content/PublicationsPage';
 import ThesisPage from './content/ThesisPage';
+import PatentsPage from './content/PatentsPage';
+import TalksPage from './content/TalksPage';
+import AwardsPage from './content/AwardsPage';
+import NewsPage from './content/NewsPage';
+
+import {
+  Home,
+  Microscope,
+  Report,
+  Rule,
+  PresentationFile,
+  Trophy,
+  Bullhorn,
+  Education,
+} from '@carbon/icons-react';
+
+const OUTLINE = [
+  {
+    name: 'Home',
+    theme: 'g90',
+    component: HomePage,
+    icon: Home,
+    home: true,
+  },
+  {
+    name: 'Research',
+    theme: 'g10',
+    icon: Microscope,
+    component: ResearchPage,
+  },
+  {
+    name: 'Publications',
+    theme: 'g10',
+    icon: Report,
+    component: PublicationsPage,
+  },
+  {
+    name: 'Thesis',
+    theme: 'g0',
+    icon: Education,
+    component: ThesisPage,
+  },
+  {
+    name: 'Patents',
+    theme: 'g0',
+    icon: Rule,
+    component: PatentsPage,
+  },
+  {
+    name: 'Talks',
+    theme: 'g0',
+    icon: PresentationFile,
+    component: TalksPage,
+  },
+  {
+    name: 'Awards',
+    theme: 'g0',
+    icon: Trophy,
+    component: AwardsPage,
+  },
+  {
+    name: 'News',
+    theme: 'g0',
+    icon: Bullhorn,
+    component: NewsPage,
+  },
+];
+
+const getHomeName = e => OUTLINE.find(item => item.home).name;
+const getTheme = name =>
+  OUTLINE.find(item => transformRouteString(item.name) === name).theme;
+const transformRouteString = string => string.toLowerCase();
+const isHome = name => name === getHomeName();
+const getComponent = name => OUTLINE.find(item => item.name === name).component;
 
 class App extends Component {
   render() {
@@ -22,23 +91,15 @@ class App extends Component {
         <PageHeader />
         <Content>
           <Switch>
-            <Route exact path="/" component={LandingPage} />
-            <Route exact path="/home" component={LandingPage} />
-            <Route exact path="/publications" component={PublicationsPage} />
-            <Route exact path="/talks" component={TalksPage} />
-            <Route exact path="/awards" component={AwardsPage} />
-            <Route exact path="/news" component={NewsPage} />
-            <Route exact path="/patents" component={PatentsPage} />
-            <Route exact path="/research" component={ResearchPage} />
-            <Route exact path="/thesis" component={ThesisPage} />
-            <Route
-              path="/ibm"
-              component={() => {
-                window.location.href =
-                  'https://www.research.ibm.com/artificial-intelligence';
-                return null;
-              }}
-            />
+            <Route exact path="/" component={getComponent(getHomeName())} />
+            {OUTLINE.map(item => (
+              <Route
+                exact
+                key={item}
+                path={'/' + transformRouteString(item.name)}
+                component={getComponent(item.name)}
+              />
+            ))}
           </Switch>
         </Content>
       </>
@@ -46,4 +107,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export { App, OUTLINE, getHomeName, getTheme, isHome, transformRouteString };

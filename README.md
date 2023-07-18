@@ -1,4 +1,6 @@
 ## 🏡 Tathagata's home: [tchakra2.com](https://tchakra2.com)
 
-[![Website](https://img.shields.io/badge/website-up-deep%20green)](http://tchakra2.com)
-[![Website](https://img.shields.io/badge/design-carbon-blue)](https://www.carbondesignsystem.com/)
+![](https://img.shields.io/badge/IBM%20Research-blue) &nbsp;
+![](https://img.shields.io/badge/Artificial%20Intelligence-green) &nbsp;
+![](https://img.shields.io/badge/Automated%20Planning-red) &nbsp;
+![](https://img.shields.io/badge/Carbon-black)

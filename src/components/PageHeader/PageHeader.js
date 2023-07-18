@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import {
+  OUTLINE,
+  getHomeName,
+  getTheme,
+  transformRouteString,
+} from '../../App.js';
+import {
   Header,
   HeaderMenuButton,
   HeaderName,
@@ -13,36 +19,29 @@ import {
   HeaderContainer,
   Theme,
 } from '@carbon/react';
-import {
-  Home,
-  Microscope,
-  Report,
-  Rule,
-  PresentationFile,
-  Trophy,
-  Bullhorn,
-  Education,
-} from '@carbon/icons-react';
 
 class PageHeader extends React.Component {
   constructor(props) {
     super();
+
+    const local_url_split = window.location.href.split('/#/');
+    const endpoint = local_url_split[local_url_split.length - 1];
+    const label =
+      endpoint === '' ? transformRouteString(getHomeName()) : endpoint;
+
+    console.log(label);
+
     this.state = {
-      current: 'home',
-      home: true,
-      research: false,
-      publications: false,
-      patents: false,
-      talks: false,
-      awards: false,
-      news: false,
-      thesis: false,
+      current: label,
+      [label]: true,
     };
   }
 
-  onClickTab = (name, e) => {
+  onClickTab = name => {
     const old = this.state.current;
     const current = name;
+
+    console.log(name);
 
     this.setState({
       ...this.state,
@@ -56,7 +55,7 @@ class PageHeader extends React.Component {
     return (
       <HeaderContainer
         render={({ isSideNavExpanded, onClickSideNavExpand }) => (
-          <Theme theme={this.state.current === 'home' && 'g100'}>
+          <Theme theme={this.state.current ? getTheme(this.state.current) : ''}>
             <Header aria-label="">
               <SkipToContent />
               <HeaderMenuButton
@@ -64,11 +63,21 @@ class PageHeader extends React.Component {
                 isActive={isSideNavExpanded}
                 aria-label="Header Area"
               />
-              <HeaderName element={Link} to="/" prefix="Tathagata's">
+              <HeaderName
+                as={Link}
+                to="/"
+                onClick={this.onClickTab.bind(
+                  this,
+                  transformRouteString(getHomeName())
+                )}
+                prefix="Tathagata's">
                 Home
               </HeaderName>
               <HeaderNavigation aria-label="">
-                <HeaderMenuItem element={Link} to="/ibm">
+                <HeaderMenuItem
+                  target="_blank"
+                  href="https://www.research.ibm.com/artificial-intelligence"
+                  rel="noopener noreferrer">
                   IBM Research AI
                 </HeaderMenuItem>
               </HeaderNavigation>
@@ -78,78 +87,21 @@ class PageHeader extends React.Component {
                 isPersistent={true}
                 isRail={true}>
                 <SideNavItems>
-                  <SideNavLink
-                    element={Link}
-                    to="/"
-                    renderIcon={Home}
-                    children="Home"
-                    onClick={this.onClickTab.bind(this, 'home')}
-                    isActive={this.state.home}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/research"
-                    renderIcon={Microscope}
-                    children="Research"
-                    onClick={this.onClickTab.bind(this, 'research')}
-                    isActive={this.state.research}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/publications"
-                    renderIcon={Report}
-                    children="Publications"
-                    onClick={this.onClickTab.bind(this, 'publications')}
-                    isActive={this.state.publications}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/thesis"
-                    renderIcon={Education}
-                    children="Thesis"
-                    onClick={this.onClickTab.bind(this, 'thesis')}
-                    isActive={this.state.thesis}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/patents"
-                    renderIcon={Rule}
-                    children="Patents"
-                    onClick={this.onClickTab.bind(this, 'patents')}
-                    isActive={this.state.patents}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/talks"
-                    renderIcon={PresentationFile}
-                    children="Talks"
-                    onClick={this.onClickTab.bind(this, 'talks')}
-                    isActive={this.state.talks}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/awards"
-                    renderIcon={Trophy}
-                    children="Awards"
-                    onClick={this.onClickTab.bind(this, 'awards')}
-                    isActive={this.state.awards}
-                    large
-                  />
-                  <SideNavLink
-                    element={Link}
-                    to="/news"
-                    renderIcon={Bullhorn}
-                    children="News"
-                    onClick={this.onClickTab.bind(this, 'news')}
-                    isActive={this.state.news}
-                    large
-                  />
+                  {OUTLINE.map(item => {
+                    const name = transformRouteString(item.name);
+                    return (
+                      <SideNavLink
+                        key={name}
+                        as={Link}
+                        to={'/' + name}
+                        children={item.name}
+                        onClick={this.onClickTab.bind(this, name)}
+                        isActive={this.state[name]}
+                        renderIcon={item.icon}
+                        large
+                      />
+                    );
+                  })}
                 </SideNavItems>
               </SideNav>
             </Header>
