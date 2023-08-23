@@ -1,0 +1,755 @@
+[
+    {
+        "id": 20234,
+        "title": "Lemming: A Tool for Guided Plan Selection using Landmarks",
+        "authors": "Jungkoo Kang, Tathagata Chakraborti, Michael Katz, Shirin Sohrabi, and Francesco Fuggitti",
+        "abstract": "Lemming is a visualization tool for the selection of plans for a given problem, allowing the user to efficiently whittle down the set of plans and select their plan(s) of choice. We propose three different user experiences for this process, all based on the principle that using landmarks as guidance can help cut down the set of choice points for the user. The live demonstration at the conference will allow the audience to interact with the tool on different domains and problems.",
+        "venue": "ICAPS 2023 Demonstration",
+        "year": "2023",
+        "link": null,
+        "tags": [
+            "planning",
+            "humanai",
+            "nlp"
+        ],
+        "render": true
+    },
+    {
+        "id": 20233,
+        "title": "Towards More Likely Models for AI Planning",
+        "authors": "Turgay Caglar, Sirine Belhaj, Tathagata Chakraborti, Michael Katz, and Sarath Sreedharan",
+        "abstract": "This is the first work to look at the application of large language models (LLMs) for the purpose of model space edits in automated planning tasks. To set the stage for this sangam, we start by enumerating the different flavors of model space problems that have been studied so far in the AI planning literature and explore the effect of an LLM on those tasks with detailed illustrative examples. We also empirically demonstrate how the performance of an LLM contrasts with combinatorial search (CS) – an approach that has been traditionally used to solve model space tasks in planning, both with the LLM in the role of a standalone model space reasoner as well as in the role of a statistical modeling tool in concert with the CS approach as part of a two-stage process. Our experiments show promising results suggesting further forays of LLMs into the exciting world of model space reasoning for planning tasks in the future.",
+        "venue": "ICML 2023 Workshop on Knowledge and Logical Reasoning in the Era of Data-driven Learning",
+        "year": "2023",
+        "link": null,
+        "tags": [
+            "nlp",
+            "planning"
+        ],
+        "render": true
+    },
+    {
+        "id": 20231,
+        "title": "Virtual, Augmented, and Mixed Reality for Human-Robot Interaction: A Survey and Virtual Design Element Taxonomy",
+        "authors": "Michael Walker, Thao Phung, Tathagata Chakraborti, Tom Williams, and Daniel Szafir",
+        "abstract": "Virtual, Augmented, and Mixed Reality for Human-Robot Interaction (VAM-HRI) has been gaining considerable attention in research in recent years. However, the HRI community lacks a set of shared terminology and framework for characterizing aspects of mixed reality interfaces, presenting serious problems for future research. Therefore, it is important to have a common set of terms and concepts that can be used to precisely describe and organize the diverse array of work being done within the field. In this paper, we present a novel taxonomic framework for different types of VAM-HRI interfaces, composed of four main categories of virtual design elements (VDEs). We present and justify our taxonomy and explain how its elements have been developed over the last 30 years as well as the current directions VAM-HRI is headed in the coming decade.",
+        "venue": "ACM Transactions on Human Robot Interaction",
+        "year": "2023",
+        "link": "https://arxiv.org/abs/2202.11249",
+        "tags": [
+            "hri",
+            "vamhri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 20232,
+        "title": "Follow the Successful Herd: Towards Explanations for Improved Use and Mental Models of Natural Language Systems",
+        "authors": "Michelle Brachman, Qian Pan, Hyo Jin Do, Casey Dugan, Arunima Chaudhary, James M Johnson, Priyanshu Rai, Tathagata Chakraborti, Thomas Gschwind, and others",
+        "abstract": "While natural language systems continue improving, they are still imperfect. If a user has a better understanding of how a system works, they may be able to better accomplish their goals even in imperfect systems. We explored whether explanations can support effective authoring of natural language utterances and how those explanations impact users’ mental models in the context of a natural language system that generates small programs. Through an online study (n=252), we compared two main types of explanations: 1) system-focused, which provide information about how the system processes utterances and matches terms to a knowledge base, and 2) social, which provide information about how other users have successfully interacted with the system. Our results indicate that providing social suggestions of terms to add to an utterance helped users to repair and generate correct flows more than system-focused explanations or social recommendations of words to modify. We also found that participants commonly understood some mechanisms of the natural language system, such as the matching of terms to a knowledge base, but they often lacked other critical knowledge, such as how the system handled structuring and ordering. Based on these findings, we make design recommendations for supporting interactions with and understanding of natural language systems.",
+        "venue": "IUI 2023",
+        "year": "2023",
+        "link": "https://dl.acm.org/doi/abs/10.1145/3581641.3584088",
+        "tags": [
+            "xai",
+            "bpm",
+            "nlp",
+            "planning",
+            "support",
+            "ai4code",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 20221,
+        "title": "From Natural Language to Workflows: Towards Emergent Intelligence in Robotic Process Automation",
+        "authors": "Tathagata Chakraborti, Yara Rizk, Vatche Isahagian, Burak Aksar, and Francesco Fuggitti",
+        "abstract": "RPA technologies allow the automation of repeated processes through indirect or direct instruction from the end-user. While declarative authoring techniques provide a powerful tool to scale up process complexity with RPA elements, often such techniques are difficult to use without expertise. In this work, we will explore systems (in the context of web service composition and goal-oriented conversational agents) that both consumers and developers can interact with, in natural language, to compose RPA elements that demonstrate emergent intelligence as a composition of smaller units of automation. We will also discuss the overhead in authoring such systems, and potential learning opportunities in reducing said overhead. Finally, we will explore issues of explainability for the developer and transparency of dynamic compositions for the consumer in dealing with such systems with aggregated automation.",
+        "venue": "BPM 2022 RPA Forum",
+        "year": "2022",
+        "link": "https://link.springer.com/chapter/10.1007/978-3-031-16168-1_8",
+        "tags": [
+            "xai",
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 20222,
+        "title": "MACQ: A Holistic View of Model Acquisition Techniques",
+        "authors": "Ethan Callanan, Rebecca De Venezia, Victoria Armstrong, Alison Paredes, Tathagata Chakraborti, and Christian Muise",
+        "abstract": "For over three decades, the planning community has explored countless methods for data-driven model acquisition. These range in sophistication (e.g., simple set operations to full-blown reformulations), methodology (e.g., logic-based vs. planing-based), and assumptions (e.g., fully vs. partially observable). With no fewer than 43 publications in the space, it can be overwhelming to understand what approach could or should be applied in a new setting. We present a holistic characterization of the action model acquisition space and further introduce a unifying framework for automated action model acquisition. We have re-implemented some of the landmark approaches in the area, and our characterization of all the techniques offers deep insight into the research opportunities that remain; i.e., those settings where no technique is capable of solving.",
+        "venue": "ICAPS 2022 Workshop on Knowledge Acquisition and Engineering (KEPS) and System Demonstration Track",
+        "year": "2022",
+        "link": "https://arxiv.org/abs/2206.06530",
+        "tags": [
+            "bpm",
+            "planning"
+        ],
+        "render": true
+    },
+    {
+        "id": 20223,
+        "title": "TOBY: A tool for exploration of data from academic survey papers",
+        "authors": "Tathagata Chakraborti, Jungkoo Kang, Christian Muise, Sarath Sreedhatan, Michael Walker, Daniel Szafir, and Tom Williams",
+        "abstract": "This paper describes TOBY, a novel visualization tool that helps a user explore the contents of an academic survey paper. The visualization consists of four components: a hierarchical view of taxonomic data in the survey, a document similarity view in the space of taxonomic classes, a network view of citations, and a new paper recommendation tool. In this paper, we will discuss these features in the context of three separate deployments of the tool.",
+        "venue": "Technical Report",
+        "year": "2022",
+        "link": "https://arxiv.org/abs/2306.10051",
+        "tags": [
+            "xai",
+            "nlp",
+            "bpm",
+            "planning",
+            "vamhri",
+            "support",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 20221,
+        "title": "A Goal-driven Natural Language Interface for Creating Application Integration Workflows",
+        "authors": "Michelle Brachman, Christopher Bygrave, Tathagata Chakraborti, Arunima Chaudhary, Zhining Ding, Casey Dugan, David Gros, Thomas Gschwind, J Johnson, Jim Laredo, Christoph Miksovic Czasch, Qian Pan, Priyanshu Rai, Ramkumar Ramalingam, Paolo Scotton, Nagarjuna Surabathina, and Kartik Talamadupula",
+        "abstract": "Web applications and services are increasingly important in a distributed internet filled with diverse cloud services and applications, each of which enable the completion of narrowly defined tasks. Given the explosion in the scale and diversity of such services, their composition and integration for achieving complex user goals remains a challenging task for end-users and requires a lot of development effort when specified by hand. We present a demonstration of the Goal Oriented Flow Assistant (GOFA) system, which provides a natural language solution to generate workflows for application integration. Our tool is built on a three-step pipeline: it first uses Abstract Meaning Representation (AMR) to parse utterances; it then uses a knowledge graph to validate candidates; and finally uses an AI planner to compose the candidate flow. We provide a video demonstration of the deployed system as part of our submission.",
+        "venue": "AAAI 2022 Demonstration",
+        "year": "2022",
+        "link": "https://www.aaai.org/AAAI22Papers/DEMO-00255-BrachmanM.pdf",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning",
+            "ai4code",
+            "humanai"
+        ],
+        "video": "https://ibm.biz/gofa-aaai",
+        "render": true
+    },
+    {
+        "id": 20216,
+        "title": "COVID-19 India Dataset: Parsing Detailed COVID-19 Data in Daily Health Bulletins from States in India",
+        "authors": "Mayank Agarwal, Tathagata Chakraborti, and Sachin Grover",
+        "abstract": "While India remains one of the hotspots of the COVID-19 pandemic, data about the pandemic from the country has proved to be largely inaccessible for use at scale. Much of the data exists in an unstructured form on the web, and limited aspects of such data are available through public APIs maintained manually through volunteer efforts. This has proved to be difficult both in terms of ease of access to detailed data as well as with regards to the maintenance of manual data-keeping over time. This paper reports on a recently launched project aimed at automating the extraction of such data from public health bulletins with the help of a combination of classical PDF parsers as well as the state of the art ML-based documents extraction APIs. In this paper, we will describe the automated data-extraction technique, the nature of the generated data, and exciting avenues of ongoing work.",
+        "venue": "NeurIPS 2021 Workshop on Machine Learning in Public Health",
+        "year": "2021",
+        "link": "https://arxiv.org/abs/2110.02311",
+        "tags": [
+            "support",
+            "nlp"
+        ],
+        "render": true
+    },
+    {
+        "id": 20215,
+        "title": "Planning for Automated Composition of Aggregated Assistants",
+        "authors": "Tathagata Chakraborti, Shubham Agarwal, Krissy Brimijoin, Prerna Agarwal, Yara Rizk, Dario Silva Moran, Scott Boag, and Yasaman Khazaeni",
+        "abstract": "An aggregated assistant is realized as an orchestrated set of individual capabilities called skills. In this demo, we will show how complex behaviors of such an assistant can be composed on the fly using automated planning.",
+        "venue": "ICAPS 2021 Demonstration",
+        "year": "2021",
+        "link": "https://icaps21.icaps-conference.org/demos/demos/389.pdf",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai"
+        ],
+        "video": "https://youtu.be/K7FPcl-IYgE",
+        "render": true
+    },
+    {
+        "id": 20214,
+        "title": "Applications of Automated Planning for Business Process Management",
+        "authors": "Andrea Marrella and Tathagata Chakraborti",
+        "abstract": "This is a brief summary of the applications of automated planning in the field of Business Process Management (BPM); and accompanies a tutorial with the same theme at the 19th International Conference on Business Process Management (BPM 2021). We hope that this report is able to quickly onboard newcomers into this field with a broad overview of the associated challenges and opportunities, as well as provide established practitioners in the field some new food for thought in terms of the state-of-the-art and the evolving nature of these problems.",
+        "venue": "Companion to Proceedings of BPM 2021",
+        "year": "2021",
+        "link": null,
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning"
+        ],
+        "render": true
+    },
+    {
+        "id": 20211,
+        "title": "NeurIPS 2020 NLC2CMD Competition: Translating Natural Language to Bash Commands",
+        "authors": "Mayank Agarwal, Tathagata Chakraborti, Quchen Fu, David Gros, Xi Victoria Lin, Jaron Maene, Kartik Talamadupula, Zhongwei Teng, Jules White",
+        "abstract": "The NLC2CMD Competition hosted at NeurIPS 2020 aimed to bring the power of natural language processing to the command line. Participants were tasked with building models that can transform descriptions of command line tasks in English to their Bash syntax. This is a report on the competition with details of the task, metrics, data, attempted solutions, and lessons learned.",
+        "venue": "NeurIPS 2020 Post Proceedings",
+        "year": "2021",
+        "link": "https://arxiv.org/abs/2103.02523",
+        "tags": [
+            "support",
+            "nlp",
+            "ai4code"
+        ],
+        "render": true
+    },
+    {
+        "id": 20212,
+        "title": "Foundations of Explanations as Model Reconciliation",
+        "authors": "Sarath Sreedharan, Tathagata Chakraborti, and Subbarao Kambhampati",
+        "abstract": "Past work on plan explanations primarily involved the AI system explaining the correctness of its plan and the rationale for its decision in terms of its own model. Such soliloquy is wholly inadequate in most realistic scenarios where users have domain and task models that differ from that used by the AI system. We posit that the explanations are best studied in light of these differing models. In particular, we show how explanation can be seen as a “model reconciliation problem” (MRP), where the AI system in effect suggests changes to the user's mental model so as to make its plan be optimal with respect to that changed user model. We will study the properties of such explanations, present algorithms for automatically computing them, discuss relevant extensions to the basic framework, and evaluate the performance of the proposed algorithms both empirically and through controlled user studies.",
+        "venue": "Artificial Intelligence Journal",
+        "year": "2021",
+        "link": "https://www.sciencedirect.com/science/article/abs/pii/S0004370221001090",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 20213,
+        "title": "Towards End-to-End Business Process Automation",
+        "authors": "Yara Rizk, Tathagata Chakraborti, Vatche Isahagian, Yasaman Khazaeni",
+        "abstract": "In recent years, robotic process automation (RPA) emerged as a vehicle to digital transformation in enterprises. However, RPA still possesses many shortcomings that have prevented it from generalizing well to new domains while minimizing coding overhead and approaching end-to-end business process automation. Recent work has looked to utilize artificial intelligence technology to address RPA’s limitations. In this work, we discuss the different approaches to RPA collaboration which is essential to achieving end-to-end automation. From rule-based composition to offline composition using automated planning and online composition using multi-agent orchestration, we present existing approaches in the literature, analyze remaining challenges, and propose insights into future research directions.",
+        "venue": "Robotic Process Automation",
+        "year": "2021",
+        "link": "https://www.degruyter.com/document/doi/10.1515/9783110676693-008/html",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning"
+        ],
+        "render": true
+    },
+    {
+        "id": 1,
+        "title": "The Emerging Landscape of Explainable AI Planning and Decision Making",
+        "authors": "Tathagata Chakraborti, Sarath Sreedharan, and Subbarao Kambhampati",
+        "abstract": "In this paper, we provide a comprehensive outline of the different threads of work in Explainable AI Planning (XAIP) that has emerged as a focus area in the last couple of years and contrast that with earlier efforts in the field in terms of techniques, target users, and delivery mechanisms. We hope that the survey will provide guidance to new researchers in automated planning towards the role of explanations in the effective design of human-in-the-loop systems, as well as provide the established researcher with some perspective on the evolution of the exciting world of explainable planning.",
+        "venue": "IJCAI 2020",
+        "year": "2020",
+        "link": "https://www.ijcai.org/Proceedings/2020/669",
+        "tags": [
+            "xai",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 300,
+        "title": "A Bayesian Account of Measures of Interpretability in Human-AI Interaction",
+        "authors": "Sarath Sreedharan, Anagha Kulkarni, Tathagata Chakraborti, David Smith, and Subbarao Kambhampati",
+        "abstract": "Existing approaches for the design of interpretable agent behavior consider different measures of interpretability in isolation. In this paper we posit that, in the design and deployment of human-aware agents in the real world, notions of interpretability are just some among many considerations; and the techniques developed in isolation lack two key properties to be useful when considered together: they need to be able to 1) deal with their mutually competing properties; and 2) an open world where the human is not just there to interpret behavior in one specific form. To this end, we consider three well-known instances of interpretable behavior studied in existing literature -- namely, explicability, legibility, and predictability -- and propose a revised model where all these behaviors can be meaningfully modeled together. We will highlight interesting consequences of this unified model and motivate, through results of a user study, why this revision is necessary. ",
+        "venue": "NeurIPS 2020 Workshop on Cooperative AI",
+        "year": "2020",
+        "link": null,
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 33,
+        "title": "Explainable Composition of Aggregated Assistants",
+        "authors": "Sarath Sreedharan, Tathagata Chakraborti, Yara Rizk, and Yasaman Khazaeni",
+        "abstract": "A new design of an AI assistant that has become increasingly popular is that of an \"aggregated assistant\" -- realized as an orchestrated composition of several individual skills or agents that can each perform atomic tasks. In this paper, we will talk about the role of planning in the automated composition of such assistants and explore how concepts in automated planning can help to establish transparency of the inner workings of the assistant to the end-user.",
+        "venue": "ICAPS 2020 Workshop on Explainable AI Planning",
+        "year": "2020",
+        "link": "https://arxiv.org/abs/2011.10707",
+        "tags": [
+            "nlp",
+            "xai",
+            "planning",
+            "bpm",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 2,
+        "title": "D3WA+ -- A Case Study of XAIP in a Model Acquisition Task for Dialogue Planning",
+        "authors": "Sarath Sreedharan, Tathagata Chakraborti, Christian Muise, Yasaman Khazaeni, and Subbarao Kambhampati",
+        "abstract": "Recently, the D3WA system was proposed as a paradigm shift in how complex goal-oriented dialogue agents can be specified by taking a declarative view of design. However, it turns out actual users of the system have a hard time evolving their mental model and grasping the imperative consequences of declarative design. In this paper, we adopt ideas from existing works in the field of Explainable AI Planning (XAIP) to provide guidance to the dialogue designer during the model acquisition process. We will highlight in the course of this discussion how the setting presents unique challenges to the XAIP setting, including having to deal with the user persona of a domain modeler rather than the end-user of the system, and consequently having to deal with the unsolvability of models in addition to explaining generated plans.",
+        "venue": "ICAPS 2020",
+        "year": "2020",
+        "link": "https://aaai.org/ojs/index.php/ICAPS/article/view/6744",
+        "tags": [
+            "xai",
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai"
+        ],
+        "award": "ICAPS 2020 People’s Choice Best System Demonstration Award",
+        "video": "https://www.youtube.com/watch?v=HMVMQnzMBsc",
+        "render": true
+    },
+    {
+        "id": 28,
+        "title": "From Robotic Process Automation to Intelligent Process Automation: Emerging Trends",
+        "authors": "Tathagata Chakraborti, Vatche Ishakian, Rania Khalaf, Yasaman Khazaeni, Vinod Muthusamy, Yara Rizk, and Merve Unuvar",
+        "abstract": "In this survey, we study how recent advances in machine intelligence are disrupting the world of business processes. Over the last decade, there has been steady progress towards the automation of business processes under the umbrella of \"robotic process automation\" (RPA). However, we are currently at an inflection point in this evolution, as a new paradigm called \"Intelligent Process Automation\" (IPA) emerges, bringing machine learning (ML) and artificial intelligence (AI) technologies to bear in order to improve business process outcomes. The purpose of this paper is to provide a survey of this emerging theme and identify key open research challenges at the intersection of AI and business processes. We hope that this emerging theme will spark engaging conversations at the RPA Forum.",
+        "venue": "BPM 2020 RPA Forum",
+        "year": "2020",
+        "link": "https://arxiv.org/abs/2007.13257",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai",
+            "xai"
+        ],
+        "render": true
+    },
+    {
+        "id": 29,
+        "title": "D3BA: A Tool for Optimizing Business Processes Using Non-Deterministic Planning",
+        "authors": "Tathagata Chakraborti, Shubham Agarwal, Yasaman Khazaeni, Yara Rizk, and Vatche Isahagian",
+        "abstract": "This paper builds upon recent work in the declarative design of dialogue agents and proposes an exciting new tool -- D3BA -- Declarative Design for Digital Business Automation, built to optimize business processes using the power of AI planning. The tool provides a powerful framework to build, optimize, and maintain complex business processes and optimize them by composing with services that automate one or more subtasks. We illustrate salient features of this composition technique, compare with other philosophies of composition, and highlight exciting opportunities for research in this emerging field of business process automation.",
+        "venue": "BPM 2020 Workshop on AI4BPM",
+        "year": "2020",
+        "link": "https://arxiv.org/abs/2001.02619",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 3,
+        "title": "Designing Environments Conducive to Interpretable Robot Behavior",
+        "authors": "Anagha Kulkarni, Sarath Sreedharan, Sarah Keren, Tathagata Chakraborti, David E. Smith, and Subbarao Kambhampati",
+        "abstract": "Designing robots capable of generating interpretable behavior is a prerequisite for achieving effective human-robot collaboration. This means that the robots need to be capable of generating behavior that aligns with human expectations and, when required, provide explanations to the humans in the loop. However, exhibiting such behavior in arbitrary environments could be quite expensive for robots, and in some cases, the robot may not even be able to exhibit the expected behavior. Given structured environments (like warehouses and restaurants), it may be possible to design the environment so as to boost the interpretability of the robot's behavior or to shape the human's expectations of the robot's behavior. In this paper, we investigate the opportunities and limitations of environment design as a tool to promote a type of interpretable behavior -- known in the literature as explicable behavior. We formulate a novel environment design framework that considers design over multiple tasks and over a time horizon. In addition, we explore the longitudinal aspect of explicable behavior and the trade-off that arises between the cost of design and the cost of generating explicable behavior over a time horizon.",
+        "venue": "IROS 2020",
+        "year": "2020",
+        "link": "https://arxiv.org/abs/2007.00820",
+        "tags": [
+            "xai",
+            "hri",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 4,
+        "title": "RADAR: Automated Task Planning for Proactive Decision Support",
+        "authors": "Sachin Grover and Sailik Sengupta and Tathagata Chakraborti and Aditya Prasad Mishra and Subbarao Kambhampati",
+        "abstract": "Proactive Decision Support aims at improving the decision making experience of human decision-makers by enhancing the quality of the decisions and the ease of making them. Given that AI techniques are efficient in searching over a potentially large solution space (of decision) and finding good solutions, it can be used for human-in-the-loop scenarios such as disaster response that demand naturalistic decision making. A human decision-maker, in such scenarios, may experience high-cognitive overload leading to a loss of situational awareness. In this paper, we propose the use of automated task-planning techniques coupled with design principles laid out in the Human-Computer Interaction (HCI) community for developing a proactive decision support system. To this extent, we highlight the capabilities of such a system RADAR and briefly, describe how automated planning techniques help us in providing the varying degrees of assistance. To evaluate the effectiveness of the different capabilities, we conduct ablation studies with human subjects on a synthetic environment for making an interactive plan of study. We found that planning techniques like plan validation and suggestions help to reduce planning time (objective metrics) and improves user satisfaction (subjective metrics) compared to expert human planners without any support.",
+        "venue": "HCI Journal",
+        "year": "2020",
+        "link": "https://www.tandfonline.com/doi/abs/10.1080/07370024.2020.1726751?journalCode=hhci20",
+        "tags": [
+            "xai",
+            "support",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 32,
+        "title": "Planning for Goal-Oriented Dialogue Systems",
+        "authors": "Christian Muise, Tathagata Chakraborti, Shubham Agarwal, Ondrej Bajgar, Arunima Chaudhary, Luis A. Lastras-Montano, Josef Ondrej, Miroslav Vodolan, and Charlie Wiecha",
+        "abstract": "Generating complex multi-turn goal-oriented dialogue agents is a difficult problem that has seen a considerable focus from many leaders in the tech industry, including IBM, Google, Amazon, and Microsoft. This is in large part due to the rapidly growing market demand for dialogue agents capable of goal-oriented behaviour. Due to the business process nature of these conversations, end-to-end machine learning systems are generally not a viable option, as the generated dialogue agents must be deployable and verifiable on behalf of the businesses authoring them. In this work, we propose a paradigm shift in the creation of goal-oriented complex dialogue systems that dramatically eliminates the need for a designer to manually specify a dialogue tree, which nearly all current systems have to resort to when the interaction pattern falls outside standard patterns such as slot filling. We propose a declarative representation of the dialogue agent to be processed by state-of-the-art planning technology. Our proposed approach covers all aspects of the process; from model solicitation to the execution of the generated plans/dialogue agents. Along the way, we introduce novel planning encodings for declarative dialogue synthesis, a variety of interfaces for working with the specification as a dialogue architect, and a robust executor for generalized contingent plans. We have created prototype implementations of all components, and in this paper, we further demonstrate the resulting system empirically. ",
+        "venue": "Technical Report",
+        "year": "2020",
+        "link": "https://arxiv.org/abs/1910.08137",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 5,
+        "title": "Expectation-Aware Planning: A General Framework for Synthesizing and Executing Self-Explaining Plans for Human-AI Interaction",
+        "authors": "Sarath Sreedharan, Tathagata Chakraborti, Christian Muise, and Subbarao Kambhampati",
+        "abstract": "In this work, we present a new planning formalism called Expectation-Aware planning for decision making with humans in the loop where the human's expectations about an agent may differ from the agent's own model. We show how this formulation allows agents to not only leverage existing strategies for handling model differences like explanations (Chakraborti et al. 2017) and explicability (Kulkarni et al. 2019), but can also exhibit novel behaviors that are generated through the combination of these different strategies. Our formulation also reveals a deep connection to existing approaches in epistemic planning. Specifically, we show how we can leverage classical planning compilations for epistemic planning to solve Expectation-Aware planning problems. To the best of our knowledge, the proposed formulation is the first complete solution to planning with diverging user expectations that is amenable to a classical planning compilation while successfully combining previous works on explanation and explicability. We empirically show how our approach provides a computational advantage over our earlier approaches that rely on search in the space of models.",
+        "venue": "AAAI 2020",
+        "year": "2020",
+        "link": "https://aaai.org/ojs/index.php/AAAI/article/view/5634",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 30,
+        "title": "A Unified Conversational Assistant Framework for Business Process Automation",
+        "authors": "Yara Rizk, Abhisekh Bhandwalder, Scott Boag, Tathagata Chakraborti, Vatche Isahagian, Yasaman Khazaeni, Falk Pollock, and Merve Unuvar",
+        "abstract": "Business process automation is a booming multi-billion-dollar industry that promises to remove menial tasks from workers' plates -- through the introduction of autonomous agents -- and free up their time and brain power for more creative and engaging tasks. However, an essential component to the successful deployment of such autonomous agents is the ability of business users to monitor their performance and customize their execution. A simple and user-friendly interface with a low learning curve is necessary to increase the adoption of such agents in banking, insurance, retail and other domains. As a result, proactive chatbots will play a crucial role in the business automation space. Not only can they respond to users' queries and perform actions on their behalf but also initiate communication with the users to inform them of the system's behavior. This will provide business users a natural language interface to interact with, monitor and control autonomous agents. In this work, we present a multi-agent orchestration framework to develop such proactive chatbots by discussing the types of skills that can be composed into agents and how to orchestrate these agents. Two use cases on a travel preapproval business process and a loan application business process are adopted to qualitatively analyze the proposed framework based on four criteria: performance, coding overhead, scalability, and agent overlap.",
+        "venue": "AAAI 2020 Workshop on Intelligent Process Automation",
+        "year": "2020",
+        "link": "https://arxiv.org/abs/2001.03543",
+        "tags": [
+            "bpm",
+            "nlp",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 31,
+        "title": "Project CLAI -- Bringing AI to the Command Line Interface",
+        "authors": "Mayank Agarwal, Jorge Barroso Carmona, Tathagata Chakraborti, Eli M. Dow, Kshitij P. Fadnis, Borja Godoy, Madhavan Pallan, and Kartik Talamadupula",
+        "abstract": "This whitepaper reports on Project CLAI (Command Line AI), which aims to bring the power of AI to the command line interface (CLI). The CLAI platform sets up the CLI as a new environment for AI researchers to conquer by surfacing the command line as a generic environment that researchers can interface to using a simple sense-act API, much like the traditional AI agent architecture. In this paper, we discuss the design and implementation of the platform in detail, through illustrative use cases of new end user interaction patterns enabled by this design, and through quantitative evaluation of the system footprint of a CLAI-enabled terminal. We also report on some early user feedback on CLAI's features from an internal survey.",
+        "venue": "Technical Report",
+        "year": "2019",
+        "link": "https://arxiv.org/abs/2002.00762",
+        "tags": [
+            "support",
+            "nlp",
+            "ai4code",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 6,
+        "title": "Balancing Explicability and Explanations in Human-Aware Planning",
+        "authors": "Tathagata Chakraborti, Sarath Sreedharan, and Subbarao Kambhampati",
+        "abstract": " Human-aware planning involves generating plans that are explicable as well as providing explanations when such plans cannot be found. In this paper, we bring these two concepts together and show how an agent can achieve a trade-off between these two competing characteristics of a plan. In order to achieve this, we conceive a first of its kind planner MEGA that can augment the possibility of explaining a plan in the plan generation process itself. We situate our discussion in the context of recent work on explicable planning and explanation generation and illustrate these concepts in two well-known planning domains, as well as in a demonstration of a robot in a typical search and reconnaissance task. Human factor studies in the latter highlight the usefulness of the proposed approach. ",
+        "venue": "IJCAI 2019",
+        "year": "2019",
+        "link": "https://www.ijcai.org/Proceedings/2019/185",
+        "tags": [
+            "xai",
+            "hri",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 8,
+        "title": "MTDeep: Boosting the Security of Deep Neural Nets Against Adversarial Attacks with Moving Target Defense",
+        "authors": "Sailik Sengupta, Tathagata Chakraborti, and Subbarao Kambhampati",
+        "abstract": "Present attack methods can make state-of-the-art classification systems based on deep neural networks mis-classify every adversarially modified test example. The design of general defense strategies against a wide range of such attacks still remains a challenging problem. In this paper, we draw inspiration from the fields of cybersecurity and multi-agent systems and propose to leverage the concept of Moving Target Defense (MTD) in designing a meta-defense for ‘boosting’ the robustness of an ensemble of deep neural networks (DNNs) for visual classification tasks against such adversarial attacks. To classify an input image at test time, a constituent network is randomly selected based on a mixed policy. To obtain this policy, we formulate the interaction between a Defender (who hosts the classification networks) and their (Legitimate and Malicious) users as a Bayesian Stackelberg Game (BSG). We empirically show that our approach MTDeep, reduces misclassification on perturbed images for various datasets such as MNIST, FashionMNIST, and ImageNet while maintaining high classification accuracy on legitimate test images. We then demonstrate that our framework, being the first meta-defense technique, can be used in conjunction with any existing defense mechanism to provide more resilience against adversarial attacks that can be afforded by these defense mechanisms alone. Lastly, to quantify the increase in robustness of an ensemble-based classification system when we use MTDeep, we analyze the properties of a set of DNNs and introduce the concept of differential immunity that formalizes the notion of attack transferability.",
+        "venue": "GameSec 2019",
+        "year": "2019",
+        "link": "https://link.springer.com/chapter/10.1007/978-3-030-32430-8_28",
+        "tags": [
+            "advml"
+        ],
+        "render": true
+    },
+    {
+        "id": 9,
+        "title": "Explicable Planning as Minimizing Distance from Expected Behavior",
+        "authors": "Anagha Kulkarni, Yantian Zha, Tathagata Chakraborti, Satya Gautam Vadlamudi, Yu Zhang, and Subbarao Kambhampati",
+        "abstract": "In order to achieve effective human-AI collaboration, it is necessary for an AI agent to align its behavior with the human's expectations. When the agent generates a task plan without such considerations, it may often result in inexplicable behavior from the human's point of view. This may have serious implications for the human, from increased cognitive load to more serious concerns of safety around the physical agent. In this work, we present an approach to generate explicable behavior by minimizing the distance between the agent's plan and the plan expected by the human. To this end, we learn a mapping between plan distances (distances between expected and agent plans) and human's plan scoring scheme. The plan generation process uses this learned model as a heuristic. We demonstrate the effectiveness of our approach in a delivery robot domain.",
+        "venue": "AAMAS 2019 Extended Abstract",
+        "year": "2019",
+        "link": "https://dl.acm.org/doi/10.5555/3306127.3332015",
+        "tags": [
+            "xai",
+            "hri",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 12,
+        "title": "Planning and Visualization for a Smart Meeting Room Assistant -- A Case Study in the Cognitive Environments Laboratory at IBM T.J. Watson Research Center, Yorktown",
+        "authors": "Tathagata Chakraborti, Kshitij P. Fadnis, Kartik Talamadupula, Mishal Dholakia, Biplav Srivastava, Jeffrey O. Kephart, and Rachel K. E. Bellamy",
+        "abstract": "In this paper, we report on the planning and visualization capabilities of Mr.Jones – a proactive orchestrator and decision-support agent for a collaborative decision making setting embodied by a smart room. The duties of such an agent may range across interactive problem solving with other agents in the environment, developing automated summaries of meetings, visualization of the internal decision-making process, proactive data and resource management, and so on. Specifically, we focus on how the visualization of the planning and plan recognition processes forms a key component of the smart assistant, and establishes transparency in the decision-making process. We also highlight how these processes contribute to the proactive nature of the agent. We demonstrate some of these functionalities in a successful deployment of the system in the CEL – the Cognitive Environments Laboratory at IBM’s T.J. Watson Research Center (Yorktown, USA), and report on emerging deployments of the system that have turned into success stories.",
+        "venue": "AI Communications",
+        "year": "2019",
+        "link": "https://content.iospress.com/articles/ai-communications/aic180609",
+        "tags": [
+            "xai",
+            "nlp",
+            "planning",
+            "support",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 13,
+        "title": "iPass: A Case Study of the Effectiveness of Automated Planning for Decision Support",
+        "authors": "Sachin Grover, Sailik Sengupta, Tathagata Chakraborti, Aditya Prasad Mishra, and Subbarao Kambhampati",
+        "abstract": "Researchers in the automated task planning community have proposed decision support systems that can assist humans in their decision-making process. Although some of these works explain the intricate details of building these systems, but their effectiveness is not supported by any human factor studies. One of the major challenge in designing these user studies, has been getting access to domain experts to verify the usefulness of the decision support system. In this paper, we borrow some of the key features of automated planning for decision support and situate them in a domain (for constructing a \"plan of study\" at Arizona State University) that graduate students can relate to. This allows us to perform a comprehensive study of key elements of decision support techniques using automated planning with domain experts (students) for a challenging task, thus helping us validate key elements of the decision support paradigm. We analyze the data gathered from these experiments to determine to what extent automated task planning technologies proposed in the existing literatur eare effective as decision support systems for human-in-the-loop decision making.",
+        "venue": "NDM 2019",
+        "year": "2019",
+        "link": "https://yochan-lab.github.io/papers/files/papers/iPass.pdf",
+        "tags": [
+            "xai",
+            "planning",
+            "support",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 14,
+        "title": "CAP: A Decision Support System for Crew Scheduling using Automated Planning",
+        "authors": "Aditya Prasad Mishra, Sailik Sengupta, Sarath Sreedharan, Tathagata Chakraborti, and Subbarao Kambhampati",
+        "abstract": "Task allocation or scheduling is known to be a difficult problem, especially in multi-agent settings. Thus, in order to solve these problems, a centralized entity that has a holistic view of (1) the entire task and (2) the capabilities of the individual agents is responsible for coming up with a schedule that needs to be followed. We look at a scenario where a centralized human entity (or planner) is given the task of preparing a day’s schedule for a set of astronauts located at the International Space Station (ISS). Given the complexity of each individual task and constraints relating to the individualagents, coming up with a good schedule, let alone an optimal one, is often difficult. In this poster, we introduce a software system CAP that acts both as an editing tool to help the human planner makes chedules and, powered by automated planning technology in artificial intelligence, can aid the human in (1) validating their plans, (2) getting suggestions about new ones and lastly, (3) asking for explanations whenever the automated planner's suggestion is inexplicable to the human in the loop.",
+        "venue": "NDM 2019",
+        "year": "2019",
+        "link": "https://yochan-lab.github.io/papers/files/papers/CAP.pdf",
+        "tags": [
+            "xai",
+            "planning",
+            "support",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 7,
+        "title": "Explicability? Legibility? Predictability? Transparency? Privacy? Security? The Emerging Landscape of Interpretable Agent Behavior",
+        "authors": "Tathagata Chakraborti, Anagha Kulkarni, Sarath Sreedharan, David E. Smith, and Subbarao Kambhampati",
+        "abstract": "There has been significant interest of late in generating behavior of agents that is interpretable to the human (observer) in the loop. However, the work in this area has typically lacked coherence on the topic, with proposed solutions for “explicable”, “legible”, “predictable” and “transparent” planning with overlapping, and sometimes conflicting, semantics all aimed at some notion of understanding what intentions the observer will ascribe to an agent by observing its behavior. This is also true for the recent works on “security” and “privacy” of plans which are also trying to answer the same question, but from the opposite point of view – i.e. when the agent is trying to hide instead of reveal its intentions. This paper attempts to provide a workable taxonomy of relevant concepts in this exciting and emerging field of inquiry.",
+        "venue": "ICAPS 2019",
+        "year": "2019",
+        "link": "https://aaai.org/ojs/index.php/ICAPS/article/view/3463",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 33,
+        "title": "(How) Can AI Bots Lie?",
+        "authors": "Tathagata Chakraborti and Subbarao Kambhampat",
+        "abstract": "Recent work on explanations for decision-making problems has viewed the explanation process as one of model reconciliation where an AI agent brings the human mental model (of its capabilities, beliefs, and goals) to the same page with regards to a task at hand. This formulation succinctly captures many possible types of explanations, as well as explicitly addresses the various properties – e.g. the social aspects, contrastiveness, and selectiveness – of explanations studied in social sciences among human-human interactions. However, it turns out that the same process can be hijacked into producing “alternative explanations” that are not true but still satisfy all these properties of a proper explanation. In AIES 2019, we discussed when such behavior may be appropriate but did not go into details of how exactly they can be generated. In this paper, we go into details of this curious feature of the model reconciliation process as a well-established framework for explanation generation of decision-making problems and formalize the relationship between explanations, lies, and persuasion in the model reconciliation framework.",
+        "venue": "ICAPS 2019 Workshop on Explainable AI Planning",
+        "year": "2019",
+        "link": "http://tchakra2.com/assets/files/lies.xaip2019.crv.pdf",
+        "tags": [
+            "xai",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 34,
+        "title": "Design for Interpretability",
+        "authors": "Anagha Kulkarni, Sarath Sreedharan, Sarah Keren, Tathagata Chakraborti, David E. Smith, and Subbarao Kambhampati",
+        "abstract": "The interpretability of an AI agent's behavior is of utmost importance for effective human-AI interaction. To this end, there has been increasing interest in characterizing and generating interpretable behavior of the agent. An alternative approach to guarantee that the agent generates interpretable behavior would be to design the agent's environment such that uninterpretable behaviors are either prohibitively expensive or unavailable to the agent. To date, there has been work under the umbrella of goal or plan recognition design exploring this notion of environment redesign in some specific instances of interpretable of behavior. In this position paper, we scope the landscape of interpretable behavior and environment redesign in all its different flavors. Specifically, we focus on three specific types of interpretable behaviors -- explicability, legibility, and predictability -- and present a general framework for the problem of environment design that can be instantiated to achieve each of the three interpretable behaviors. We also discuss how specific instantiations of this framework correspond to prior works on environment design and identify exciting opportunities for future work.",
+        "venue": "ICAPS 2019 Workshop on Explainable AI Planning",
+        "year": "2019",
+        "link": "https://openreview.net/forum?id=rkxg4a3m9N",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 10,
+        "title": "Plan Explanations as Model Reconciliation -- An Empirical Study",
+        "authors": "Tathagata Chakraborti, Sarath Sreedharan, Sachin Grover, and Subbarao Kambhampati",
+        "abstract": "Recent work in explanation generation for decision making agents has looked at how unexplained behavior of autonomous systems can be understood in terms of differences in the model of the system and the human's understanding of the same, and how the explanation process as a result of this mismatch can be then seen as a process of reconciliation of these models. Existing algorithms in such settings, while having been built on contrastive, selective and social properties of explanations as studied extensively in the psychology literature, have not, to the best of our knowledge, been evaluated in settings with actual humans in the loop. As such, the applicability of such explanations to human-AI and human-robot interactions remains suspect. In this paper, we set out to evaluate these explanation generation algorithms in a series of studies in a mock search and rescue scenario with an internal semi-autonomous robot and an external human commander. During that process, we hope to demonstrate to what extent the properties of these algorithms hold as they are evaluated by humans.",
+        "venue": "HRI 2019",
+        "year": "2019",
+        "link": "https://ieeexplore.ieee.org/document/8673193",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 36,
+        "title": "Towards Understanding User Preferences for Explanation Types in Explanation as Model Reconciliation",
+        "authors": "Zahra Zahedi, Alberto Olmo, Tathagata Chakraborti, Sarath Sreedharan, and Subbarao Kambhampati",
+        "abstract": "Recent work has formalized the explanation process in the context of automated planning as one of model reconciliation - i.e. a process by which the planning agent can bring the explainee's (possibly faulty) model of a planning problem closer to its understanding of the ground truth until both agree that its plan is the best possible. The content of explanations can thus range from misunderstandings about the agent's beliefs (state), desires (goals) and capabilities (action model). Though existing literature has considered different kinds of these model differences to be equivalent, literature on the explanations in social sciences has suggested that explanations with similar logical properties may often be perceived differently by humans. In this brief report, we explore to what extent humans attribute importance to different kinds of model differences that have been traditionally considered equivalent in the model reconciliation setting. Our results suggest that people prefer the explanations which are related to the effects of actions.",
+        "venue": "HRI 2019 Late Breaking Report",
+        "year": "2019",
+        "link": "https://ieeexplore.ieee.org/document/8673097",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 37,
+        "title": "The Reality-Virtuality Interaction Cube: A Framework for Conceptualizing Mixed-Reality Interaction Design Elements for HRI",
+        "authors": "Tom Williams, Daniel Szafir, and Tathagata Chakraborti",
+        "abstract": "There has recently been an explosion of work in the human-robot interaction (HRI) community on the use of mixed, augmented, and virtual reality. We present a novel conceptual framework to characterize and cluster work in this new area and identify gaps for future research. We begin by introducing the Plane of Interaction: a framework for characterizing interactive technologies in a 2D space informed by the Model-View-Controller design pattern. We then describe how Interactive Design Elements that contribute to the interactivity of a technology can be characterized within this space and present a taxonomy of mixed-reality interactive design elements. We then discuss how these elements may be rendered onto both reality- and virtuality-based environments using a variety of hardware devices and introduce the Reality-Virtuality Interaction Cube: a three-dimensional continuum representing the design space of interactive technologies formed by combining the Plane of Interaction with the Reality-Virtuality Continuum. Finally, we demonstrate the feasibility and utility of this framework by clustering and analyzing the set of papers presented at the 2018 VAM-HRI workshop.",
+        "venue": "HRI 2019 Late Breaking Report",
+        "year": "2019",
+        "link": "https://ieeexplore.ieee.org/document/8673071.",
+        "tags": [
+            "hri",
+            "vamhri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 38,
+        "title": "Virtual, Augmented and Mixed Reality for Human-Robot Interaction (VAM-HRI)",
+        "authors": "Tom Williams, Daniel Szafir, Tathagata Chakraborti, and Elizabeth Phillips",
+        "abstract": "The 3rd International Workshop on Virtual, Augmented, and Mixed Reality for Human-Robot Interactions (VAM-HRI) will bring together HRI, Robotics, and Mixed Reality researchers to address challenges in mixed reality interactions between humans and robots. Topics relevant to the workshop include development of robots that can interact with humans in mixed reality, use of virtual reality for developing interactive robots, the design of augmented reality interfaces that mediate communication between humans and robots, comparisons of the capabilities and perceptions of robots and virtual agents, and best design practices. VAM-HRI 2020 will follow on the success of VAM-HRI 2018 and 2019, and advance the cause of this nascent research community",
+        "venue": "Companion to HRI 2019 Proceedings",
+        "year": "2019",
+        "link": "https://dl.acm.org/doi/10.1145/3371382.3374850",
+        "tags": [
+            "hri",
+            "planning",
+            "vamhri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 39,
+        "title": "The 1st International Workshop on Virtual, Augmented, and Mixed Reality for Human-Robot Interaction",
+        "authors": "Tom Williams, Daniel Szafir, Tathagata Chakraborti, and Heni Ben Amor",
+        "abstract": "The 1st International Workshop on Virtual, Augmented, and Mixed Reality for Human-Robot Interaction (VAM-HRI) was held in 2018 in conjunction with the 13th International Conference on Human-Robot Interaction, and brought together researchers from the fields of Human-Robot Interaction (HRI), Robotics, Artificial Intelligence, and Virtual, Augmented, and Mixed Reality in order to identify challenges in mixed reality interactions between humans and robots. This inaugural workshop featured a keynote talk from Blair MacIntyre (Mozilla, Georgia Tech), a panel discussion, and twenty-nine papers presented as lightning talks and/or posters. In this report, we briefly survey the papers presented at the workshop and outline some potential directions for the community.",
+        "venue": "AI Magazine",
+        "year": "2019",
+        "link": "https://www.aaai.org/ojs/index.php/aimagazine/article/view/2822",
+        "tags": [
+            "hri",
+            "vamhri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 11,
+        "title": "(When) Can Bots Lie?",
+        "authors": "Tathagata Chakraborti and Subbarao Kambhampat",
+        "abstract": "The ability of an AI agent to build mental models can open up pathways for manipulating and exploiting the human in the hopes of achieving some greater good. In fact, such behavior does not necessarily require any malicious intent but can rather be borne out of cooperative scenarios. It is also beyond the scope of misinterpretation of intents, as in the case of value alignment problems, and thus can be effectively engineered if desired (i.e. algorithms exist that can optimize such behavior not because models were misspecified but because they were misused). Such techniques pose several unresolved ethical and moral questions with regards to the design of autonomy. In this paper, we illustrate some of these issues in a teaming scenario and investigate how they are perceived by participants in a thought experiment. Finally, we end with a discussion on the moral implications of such behavior from the perspective of the doctor-patient relationship.",
+        "venue": "AIES @ AAAI 2019",
+        "year": "2019",
+        "link": "https://dl.acm.org/doi/10.1145/3306618.3314281",
+        "tags": [
+            "xai",
+            "planning",
+            "humanai"
+        ],
+        "award": "ACM Technews AIES 2019 Highlight",
+        "render": true
+    },
+    {
+        "id": 44,
+        "title": "Visualizations for an Explainable Planning Agent",
+        "authors": "Tathagata Chakraborti, Kshitij P. Fadnis, Kartik Talamadupula, Mishal Dholakia, Biplav Srivastava, Jeffrey O. Kephart, and Rachel K. E. Bellamy",
+        "abstract": " In this demonstration, we report on the visualization capabilities of an Explainable AI Planning (XAIP) agent that can support human-in-the-loop decision-making. Imposing transparency and explainability requirements on such agents is crucial for establishing human trust and common ground with an end-to-end automated planning system. Visualizing the agent's internal decision making processes is a crucial step towards achieving this. This may include externalizing the \"brain\" of the agent: starting from its sensory inputs, to progressively higher order decisions made by it in order to drive its planning components. We demonstrate these functionalities in the context of a smart assistant in the Cognitive Environments Laboratory at IBM's T.J. Watson Research Center. ",
+        "venue": "IJCAI 2018 Demo",
+        "year": "2018",
+        "link": "https://www.ijcai.org/Proceedings/2018/849",
+        "tags": [
+            "xai",
+            "planning",
+            "nlp",
+            "support",
+            "humanai"
+        ],
+        "award": "ICAPS 2018 People’s Choice Best System Demonstration Award",
+        "render": true
+    },
+    {
+        "id": 15,
+        "title": "Model Uncertainity and Multiplicity in Explanation via Model Reconciliation",
+        "authors": "Sarath Sreedharan, Tathagata Chakraborti, and Subbarao Kambhampati",
+        "abstract": "Model reconciliation has been proposed as a way for an agent to explain its decisions to a human who may have a different understanding of the same planning problem by explaining its decisions in terms of these model differences. However, often the human's mental model (and hence the difference) is not known precisely and such explanations cannot be readily computed. In this paper, we show how the explanation generation process evolves in the presence of such model uncertainty or incompleteness by generating conformant explanations that are applicable to a set of possible models. We also show how such explanations can contain superfluous information and how such redundancies can be reduced using conditional explanations to iterate with the human to attain common ground. Finally, we will introduce an anytime version of this approach and empirically demonstrate the trade-offs involved in the different forms of explanations in terms of the computational overhead for the agent and the communication overhead for the human. We illustrate these concepts in three well-known planning domains as well as in a demonstration on a robot involved in a typical search and reconnaissance scenario with an external human supervisor.",
+        "venue": "ICAPS 2018",
+        "year": "2018",
+        "link": "https://aaai.org/ocs/index.php/ICAPS/ICAPS18/paper/view/17783",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 40,
+        "title": "Human-Aware Planning Revisited: A Tale of Three Models",
+        "authors": "Tathagata Chakraborti, Sarath Sreedharan, and Subbarao Kambhampat",
+        "abstract": "Human-aware planning requires an agent to be aware of the mental model of the humans, in addition to their physical or capability model. This not only allows an agent to envisage the desired roles of the human in a joint plan but also anticipate how its plan will be perceived by the latter. The human mental model becomes especially useful in the context of an explainable planning (XAIP) agent since an explanatory process cannot be a soliloquy, i.e. it must incorporate the human's beliefs and expectations of the planner. In this paper, we survey our recent efforts in this direction.",
+        "venue": "IJCAI 2018 Workshop on Explainable AI",
+        "year": "2018",
+        "link": "https://yochan-lab.github.io/papers/files/papers/three-models.pdf",
+        "tags": [
+            "xai",
+            "planning",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 41,
+        "title": "What Can Automated Planning do for Intelligent Tutoring Systems?",
+        "authors": "Sachin Grover, Tathagata Chakraborti, and Subbarao Kambhampati",
+        "abstract": "In this paper, we build on the latest in automated planning techniques to develop a generalized framework for course-independent design of Intelligent Tutoring Systems (ITSs). This is meant to provide targeted and personalized assistance to students, in order to meet the demands of the increasing class size, as well as help instructors who can use higher level specifications to design courses without having to worry about building the course-specific tutoring assistance. Thus the aim of this paper is to demonstrate what automated planning can bring to the table for the design of course-independent ITS features. We will illustrate these capabilities in Dragoon, an ITS deployed at Arizona State University.",
+        "venue": "ICAPS 2018 Scheduling and Planning Applications Workshop",
+        "year": "2018",
+        "link": "https://yochan-lab.github.io/papers/files/papers/automated-planning-intelligent.pdf",
+        "tags": [
+            "xai",
+            "planning",
+            "support",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 42,
+        "title": "MA-RADAR -- A Mixed-Reality Interface for Collaborative Decision Making",
+        "authors": "Sailik Sengupta, Tathagata Chakraborti, and Subbarao Kambhampati",
+        "abstract": "There has been a lot of recent interest in the planning community towards adapting automated planning techniques for the role of decision support for human decision makers in the loop. A unique challenge in such settings is the presence of multiple humans collaborating during the planning process which not only requires algorithmic advances to handle issues such as diverging mental models and the establishment of common ground, but also the development of user interfaces that can facilitate the distributed decision making process among the human planners. We posit that recent advances in augmented reality technology is uniquely positioned to serve this need. For example, a mixed-reality workspace can be ideal for curating information towards the particular needs (e.g. explanations) of the individual decision makers. In this paper, we report on ongoing work along these directions and showcase MA-RADAR, the multi-agent version of the decision support system RADAR.",
+        "venue": "ICAPS 2018 Workshop on User Interfaces and Scheduling and Planning",
+        "year": "2018",
+        "link": "https://yochan-lab.github.io/papers/files/papers/ma-radar.pdf",
+        "tags": [
+            "xai",
+            "planning",
+            "support",
+            "vamhri",
+            "humanai"
+        ],
+        "render": true
+    },
+    {
+        "id": 16,
+        "title": "Projection-Aware Task Planning and Execution for Human-in-the-Loop Operation of Robots in a Mixed-Reality Workspace",
+        "authors": "Tathagata Chakraborti, Sarath Sreedharan, Anagha Kulkarni, and Subbarao Kambhampati",
+        "abstract": "Recent advances in mixed-reality technologies have renewed interest in alternative modes of communication for human-robot interaction. However, most of the work in this direction has been confined to tasks such as teleoperation, simulation or explication of individual actions of a robot. In this paper, we will discuss how the capability to project intentions affect the task planning capabilities of a robot. Specifically, we will start with a discussion on how projection actions can be used to reveal information regarding the future intentions of the robot at the time of task execution. We will then pose a new planning paradigm - projection-aware planning - whereby a robot can trade off its plan cost with its ability to reveal its intentions using its projection actions. We will demonstrate each of these scenarios with the help of a joint human-robot activity using the HoloLens.",
+        "venue": "IROS 2018",
+        "year": "2018",
+        "link": "https://ieeexplore.ieee.org/document/8593830",
+        "tags": [
+            "xai",
+            "planning",
+            "hri",
+            "vamhri",
+            "humanai"
+        ],
+        "render": true
+    }
+]
