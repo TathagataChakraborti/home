@@ -165,8 +165,6 @@ class PublicationsPage extends React.Component {
       if (item.render) count += 1;
     });
 
-    console.log(currentData.map(item => {return {...item, venue: item.venue.replaceAll('xxxx', item.year)}}))
-
     this.setState({
       ...this.state,
       data: currentData,

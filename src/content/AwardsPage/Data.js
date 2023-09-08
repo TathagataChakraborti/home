@@ -1,4 +1,6 @@
 const DATA = [
+  'IBM 2023 Corporate Technical Recognition for Open Source Contribution and Leadership',
+  'ICAPS 2023 People’s Choice Best System Demonstration Award Runner-up',
   'IBM 2022 Research Accomplishment Award',
   'IBM 2022 Annual Employee Equity Award',
   'IBM 2022 Entrepreneurship Award',
