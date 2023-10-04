@@ -64,6 +64,18 @@ const DATA = [
     tags: ['xai', 'bpm', 'nlp', 'planning', 'support', 'ai4code', 'humanai'],
   },
   {
+    id: 20231,
+    title:
+      'NL2LTL – A Python Package for Converting Natural Language (NL) Instructions to Linear Temporal Logic (LTL) Formulas',
+    authors: 'Francesco Fuggitti and Tathagata Chakraborti',
+    abstract:
+      'This is a demonstration of our newly released Python package NL2LTL which leverages the latest in natural language understanding (NLU) and large language models (LLMs) to translate natural language instructions to linear temporal logic (LTL) formulas. This allows direct translation to formal languages that a reasoning system can use, while at the same time, allowing the end-user to provide inputs in natural language without having to understand any details of an underlying formal language. The package comes with support for a set of default LTL patterns, corresponding to popular DECLARE templates, but is also fully extensible to new formulas and user inputs. The package is open-source and is free to use for the AI community under the MIT license.',
+    venue: 'AAAI xxxx Demonstration',
+    year: '2023',
+    link: null,
+    tags: ['bpm', 'planning', 'humanai', 'nlp'],
+  },
+  {
     id: 20221,
     title:
       'From Natural Language to Workflows: Towards Emergent Intelligence in Robotic Process Automation',
