@@ -28,7 +28,7 @@ import {
 const OUTLINE = [
   {
     name: 'Home',
-    theme: 'g90',
+    theme: 'g100',
     component: HomePage,
     icon: Home,
     home: true,

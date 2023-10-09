@@ -1,5 +1,7 @@
 import React from 'react';
 import {
+  Grid,
+  Column,
   StructuredListCell,
   StructuredListRow,
   StructuredListHead,
@@ -19,29 +21,31 @@ class PatentsPage extends React.Component {
 
   render() {
     return (
-      <div className="offset">
-        <StructuredListWrapper>
-          <StructuredListHead>
-            <StructuredListRow head>
-              <StructuredListCell head>Patents</StructuredListCell>
-            </StructuredListRow>
-          </StructuredListHead>
-          <StructuredListBody>
-            {this.state.data.map((item, key) => (
-              <React.Fragment key={key}>
-                <StructuredListRow>
-                  <StructuredListCell>
-                    <strong> {item.year} </strong>
-                  </StructuredListCell>
-                  <StructuredListCell>
-                    <strong> {item.title} </strong> | {item.authors}
-                  </StructuredListCell>
-                </StructuredListRow>
-              </React.Fragment>
-            ))}
-          </StructuredListBody>
-        </StructuredListWrapper>
-      </div>
+      <Grid className="offset">
+        <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
+          <StructuredListWrapper>
+            <StructuredListHead>
+              <StructuredListRow head>
+                <StructuredListCell head>Patents</StructuredListCell>
+              </StructuredListRow>
+            </StructuredListHead>
+            <StructuredListBody>
+              {this.state.data.map((item, key) => (
+                <React.Fragment key={key}>
+                  <StructuredListRow>
+                    <StructuredListCell>
+                      <strong> {item.year} </strong>
+                    </StructuredListCell>
+                    <StructuredListCell>
+                      <strong> {item.title} </strong> | {item.authors}
+                    </StructuredListCell>
+                  </StructuredListRow>
+                </React.Fragment>
+              ))}
+            </StructuredListBody>
+          </StructuredListWrapper>
+        </Column>
+      </Grid>
     );
   }
 }

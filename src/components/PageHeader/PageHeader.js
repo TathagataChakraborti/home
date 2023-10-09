@@ -83,9 +83,7 @@ class PageHeader extends React.Component {
               </HeaderNavigation>
               <SideNav
                 aria-label="Navigation Options"
-                expanded={isSideNavExpanded}
-                isPersistent={true}
-                isRail={true}>
+                expanded={isSideNavExpanded}>
                 <SideNavItems>
                   {OUTLINE.map(item => {
                     const name = transformRouteString(item.name);

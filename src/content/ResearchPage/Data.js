@@ -41,7 +41,7 @@ const DATA = [
   {
     id: 6,
     name: 'XAIP @ ICAPS',
-    link: 'https://ibm.biz/xaip2020',
+    link: 'https://explainableplanning.com',
     image: null,
     primary: false,
     secondary: false,
@@ -50,7 +50,7 @@ const DATA = [
   {
     id: 7,
     name: 'VAM-HRI @ HRI',
-    link: 'http://vam-hri.xyz/',
+    link: 'http://vamhri.com',
     image: null,
     primary: false,
     secondary: false,

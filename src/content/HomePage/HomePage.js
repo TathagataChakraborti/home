@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Theme,
   Grid,
   Column,
   Link,
@@ -47,18 +48,17 @@ class LandingPage extends React.Component {
 
   render() {
     return (
-      <div
+      <Theme
+        className="offset"
         style={{
-          width: '100%',
-          height: '100vh',
           backgroundImage: `url(${process.env.PUBLIC_URL}/images/cover.png)`,
           backgroundPosition: 'right',
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}>
         <Grid>
-          <Column lg={4} md={4} sm={4} className="offset-progress-area">
-            <ProgressIndicator vertical currentIndex={1}>
+          <Column lg={{ start: 4, end: 8 }} md={{ start: 2, end: 9 }} sm={4}>
+            <ProgressIndicator vertical currentIndex={1} className="news-area">
               {DATA.map((item, key) => (
                 <React.Fragment key={key}>
                   <ProgressStepNew props={item} />
@@ -67,7 +67,7 @@ class LandingPage extends React.Component {
             </ProgressIndicator>
           </Column>
         </Grid>
-      </div>
+      </Theme>
     );
   }
 }

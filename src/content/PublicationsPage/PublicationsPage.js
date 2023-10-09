@@ -215,44 +215,42 @@ class PublicationsPage extends React.Component {
   render() {
     return (
       <Theme theme="g10">
-        <div className="offset">
-          <Grid>
-            <Column lg={16} md={8} sm={4}>
-              <Search
-                light
-                size="lg"
-                id="explore"
-                placeholder="Explore"
-                labelText=""
-                value={this.state.search}
-                onChange={this.handleInputChange.bind(this)}
-              />
+        <Grid className="offset">
+          <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
+            <Search
+              light
+              size="lg"
+              id="explore"
+              placeholder="Explore"
+              labelText=""
+              value={this.state.search}
+              onChange={this.handleInputChange.bind(this)}
+            />
 
-              <div style={{ marginTop: '10px', marginBottom: '50px' }}>
-                {Object.keys(TAGS).map((item, key) => (
-                  <Tag
-                    key={key}
-                    filter={this.state.filter[item]}
-                    type="cool-gray"
-                    className={'explore-tags ' + item}
-                    onClose={this.onCloseTag.bind(this, item)}
-                    onClick={this.onClickTag.bind(this, item)}>
-                    {TAGS[item]}
-                  </Tag>
-                ))}
-                <Tag type="warm-gray" className="explore-tags number-tag">
-                  {this.state.number}
+            <div style={{ marginTop: '10px', marginBottom: '50px' }}>
+              {Object.keys(TAGS).map((item, key) => (
+                <Tag
+                  key={key}
+                  filter={this.state.filter[item]}
+                  type="cool-gray"
+                  className={'explore-tags ' + item}
+                  onClose={this.onCloseTag.bind(this, item)}
+                  onClick={this.onClickTag.bind(this, item)}>
+                  {TAGS[item]}
                 </Tag>
-              </div>
-
-              {this.state.data.map((item, key) => (
-                <React.Fragment key={key}>
-                  {item.render && <Paper props={item} />}
-                </React.Fragment>
               ))}
-            </Column>
-          </Grid>
-        </div>
+              <Tag type="warm-gray" className="explore-tags number-tag">
+                {this.state.number}
+              </Tag>
+            </div>
+
+            {this.state.data.map((item, key) => (
+              <React.Fragment key={key}>
+                {item.render && <Paper props={item} />}
+              </React.Fragment>
+            ))}
+          </Column>
+        </Grid>
       </Theme>
     );
   }
