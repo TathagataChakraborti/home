@@ -22,6 +22,7 @@ import {
   VideoAdd,
 } from '@carbon/icons-react';
 
+import PageHeader from '../../components/PageHeader';
 import { DATA, TAGS } from './Data.js';
 
 const Paper = props => {
@@ -212,9 +213,38 @@ class PublicationsPage extends React.Component {
     );
   };
 
+  getAllSelectedTags = e => {
+    return Object.keys(TAGS)
+      .filter(item => this.state.filter[item])
+      .map(item => TAGS[item]);
+  };
+
+  getAllSelectedTagsFormattedText = e => {
+    const selected_tags = this.getAllSelectedTags();
+
+    if (selected_tags.length === 1) {
+      return selected_tags[0];
+    } else if (selected_tags.length === 2) {
+      return selected_tags[0] + ' and ' + selected_tags[1];
+    } else {
+      var formatted_text = '';
+
+      selected_tags.forEach((item, id) => {
+        if (id !== selected_tags.length - 1) {
+          formatted_text += item + ', ';
+        } else {
+          formatted_text += 'and ' + item;
+        }
+      });
+
+      return formatted_text;
+    }
+  };
+
   render() {
     return (
       <Theme theme="g10">
+        <PageHeader />
         <Grid className="offset">
           <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
             <Search
@@ -242,6 +272,20 @@ class PublicationsPage extends React.Component {
               <Tag type="warm-gray" className="explore-tags number-tag">
                 {this.state.number}
               </Tag>
+
+              {this.getAllSelectedTags().length > 0 && (
+                <>
+                  <br />
+                  <br />
+                  <p style={{ fontSize: 'smaller', color: 'gray' }}>
+                    Filtering papers by selected tags:{' '}
+                    <span className="text-blue">
+                      {this.getAllSelectedTagsFormattedText()}
+                    </span>
+                    .
+                  </p>
+                </>
+              )}
             </div>
 
             {this.state.data.map((item, key) => (

@@ -3,6 +3,7 @@ import { Link as NewLink } from 'react-router-dom';
 import { generateImageUrl } from '../../components/Info';
 import { Grid, Column, Theme, Tile, Button } from '@carbon/react';
 
+import PageHeader from '../../components/PageHeader';
 import DATA from './Data.js';
 
 const Project = props => {
@@ -84,14 +85,10 @@ const Project3 = props => {
 };
 
 class ResearchPage extends React.Component {
-  constructor(props) {
-    super();
-    this.state = {};
-  }
-
   render() {
     return (
       <Theme theme="g10">
+        <PageHeader />
         <Grid className="offset">
           <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
             <Grid>

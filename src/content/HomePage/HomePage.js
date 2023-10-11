@@ -8,6 +8,7 @@ import {
   ProgressIndicator,
 } from '@carbon/react';
 
+import PageHeader from '../../components/PageHeader';
 import DATA from './Data.js';
 
 const ProgressStepNew = props => {
@@ -56,6 +57,7 @@ class LandingPage extends React.Component {
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
         }}>
+        <PageHeader />
         <Grid>
           <Column lg={{ start: 4, end: 8 }} md={{ start: 2, end: 9 }} sm={4}>
             <ProgressIndicator vertical currentIndex={1} className="news-area">

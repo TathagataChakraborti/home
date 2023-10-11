@@ -4,7 +4,6 @@ import './app.scss';
 import { Content } from '@carbon/react';
 import { Route, Switch } from 'react-router-dom';
 
-import PageHeader from './components/PageHeader';
 import HomePage from './content/HomePage';
 import ResearchPage from './content/ResearchPage';
 import PublicationsPage from './content/PublicationsPage';
@@ -88,7 +87,6 @@ class App extends Component {
   render() {
     return (
       <>
-        <PageHeader />
         <Content>
           <Switch>
             <Route exact path="/" component={getComponent(getHomeName())} />

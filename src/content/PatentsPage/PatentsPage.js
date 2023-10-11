@@ -9,6 +9,7 @@ import {
   StructuredListBody,
 } from '@carbon/react';
 
+import PageHeader from '../../components/PageHeader';
 import DATA from './Data.js';
 
 class PatentsPage extends React.Component {
@@ -21,31 +22,34 @@ class PatentsPage extends React.Component {
 
   render() {
     return (
-      <Grid className="offset">
-        <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
-          <StructuredListWrapper>
-            <StructuredListHead>
-              <StructuredListRow head>
-                <StructuredListCell head>Patents</StructuredListCell>
-              </StructuredListRow>
-            </StructuredListHead>
-            <StructuredListBody>
-              {this.state.data.map((item, key) => (
-                <React.Fragment key={key}>
-                  <StructuredListRow>
-                    <StructuredListCell>
-                      <strong> {item.year} </strong>
-                    </StructuredListCell>
-                    <StructuredListCell>
-                      <strong> {item.title} </strong> | {item.authors}
-                    </StructuredListCell>
-                  </StructuredListRow>
-                </React.Fragment>
-              ))}
-            </StructuredListBody>
-          </StructuredListWrapper>
-        </Column>
-      </Grid>
+      <>
+        <PageHeader />
+        <Grid className="offset">
+          <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
+            <StructuredListWrapper>
+              <StructuredListHead>
+                <StructuredListRow head>
+                  <StructuredListCell head>Patents</StructuredListCell>
+                </StructuredListRow>
+              </StructuredListHead>
+              <StructuredListBody>
+                {this.state.data.map((item, key) => (
+                  <React.Fragment key={key}>
+                    <StructuredListRow>
+                      <StructuredListCell>
+                        <strong> {item.year} </strong>
+                      </StructuredListCell>
+                      <StructuredListCell>
+                        <strong> {item.title} </strong> | {item.authors}
+                      </StructuredListCell>
+                    </StructuredListRow>
+                  </React.Fragment>
+                ))}
+              </StructuredListBody>
+            </StructuredListWrapper>
+          </Column>
+        </Grid>
+      </>
     );
   }
 }
