@@ -60,7 +60,11 @@ class ThesisPage extends React.Component {
 
           {['xai', 'hri', 'support', 'vamhri', 'humanai', 'planning'].map(
             item => (
-              <Tag type="gray" name={item} className={item + ' explore-tags'}>
+              <Tag
+                key={item}
+                type="gray"
+                name={item}
+                className={item + ' explore-tags'}>
                 {TAGS[item]}
               </Tag>
             )

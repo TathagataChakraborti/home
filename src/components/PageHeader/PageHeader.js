@@ -29,8 +29,6 @@ class PageHeader extends React.Component {
     const label =
       endpoint === '' ? transformRouteString(getHomeName()) : endpoint;
 
-    console.log(label);
-
     this.state = {
       current: label,
       [label]: true,
@@ -40,9 +38,6 @@ class PageHeader extends React.Component {
   onClickTab = name => {
     const old = this.state.current;
     const current = name;
-
-    console.log(name);
-
     this.setState({
       ...this.state,
       current: current,
@@ -96,7 +91,7 @@ class PageHeader extends React.Component {
                         onClick={this.onClickTab.bind(this, name)}
                         isActive={this.state[name]}
                         renderIcon={item.icon}
-                        large
+                        large={this.state[name]}
                       />
                     );
                   })}

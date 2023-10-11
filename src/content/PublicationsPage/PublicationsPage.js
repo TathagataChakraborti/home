@@ -26,7 +26,7 @@ import { DATA, TAGS } from './Data.js';
 
 const Paper = props => {
   return (
-    <StructuredListWrapper className="paper-card" ariaLabel="Structured list">
+    <StructuredListWrapper className="paper-card" aria-label="Structured list">
       <StructuredListHead>
         <StructuredListRow>
           <StructuredListCell head>
