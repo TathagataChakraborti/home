@@ -13,6 +13,72 @@ const TAGS = {
 
 const DATA = [
   {
+    id: 20242,
+    title:
+      'Interactive Plan Selection using Linear Temporal Logic, Disjunctive Action Landmarks, and Natural Language Instruction',
+    authors:
+      'Tathagata Chakraborti, Jungkoo Kang, Francesco Fuggitti, Michael Katz, and Shirin Sohrabi',
+    abstract:
+      'We present Lemming – a visualization tool for the interactive selection of plans for a given problem, allowing the user to efficiently whittle down the set of plans and select their plan(s) of choice. We demonstrate four different user experiences for this process, three of them based on the principle of using disjunctive action landmarks as guidance to cut down the set of choice points for the user, and one on the use of linear temporal logic (LTL) to impart additional constraints into the plan set using natural language (NL) instruction.',
+    venue: 'AAAI xxxx Demonstration',
+    year: '2024',
+    link: null,
+    video: 'https://youtu.be/LnUJwA027O0',
+    tags: ['planning', 'nlp', 'humanai', 'bpm'],
+  },
+  {
+    id: 20241,
+    title:
+      'Can LLMs Fix Issues with Reasoning Models? Towards More Likely Models for AI Planning',
+    authors:
+      'Turgay Caglar, Sirine Belhaj, Tathagata Chakraborti, Michael Katz, and Sarath Sreedharan',
+    abstract:
+      'This is the first work to look at the application of large language models (LLMs) for the purpose of model space edits in automated planning tasks. To set the stage for this union, we explore two different flavors of model space problems that have been studied in the AI planning literature and explore the effect of an LLM on those tasks. We empirically demonstrate how the performance of an LLM contrasts with combinatorial search (CS) – an approach that has been traditionally used to solve model space tasks in planning, both with the LLM in the role of a standalone model space reasoner as well as in the role of a statistical signal in concert with the CS approach as part of a two-stage process. Our experiments show promising results suggesting further forays of LLMs into the exciting world of model space reasoning for planning tasks in the future.',
+    venue: 'AAAI xxxx',
+    year: '2024',
+    link: null,
+    tags: ['nlp', 'planning'],
+  },
+  {
+    id: 20237,
+    title: 'Guided Demonstrations Using Automated Excuse Generation',
+    authors:
+      'Maximilian Diehl, Tathagata Chakraborti, and Karinne Ramirez-Amaro',
+    abstract:
+      "Teaching task-level directives to robots via demonstration is a popular tool to expand the robot's capabilities to interact with its environment. While current learning from demonstration systems primarily focuses on abstracting the task-level knowledge to the robot, these systems lack the ability to understand which part of the task can be already solved given the robot's prior knowledge. Therefore, instead of only requiring demonstrations of the missing pieces, these systems will require a demonstration of the complete task, which is cumbersome, repetitive, and can discourage people from helping the robot by performing the demonstrations. Therefore, we propose to use the notion of \"excuses\" to identify the smallest change in the robot state that makes a task, currently not solvable by the robot, solvable -- as a means to solicit more targeted demonstrations from a human. These excuses are generated automatically using combinatorial search over possible changes that can be made to the robot's state and choosing the minimum changes that make it solvable. These excuses then serve as guidance for the demonstrator who can use it to decide what to demonstrate to the robot in order to make this requested change possible, thereby making the original task solvable for the robot without having to demonstrate it in its entirety. By working with symbolic state descriptions, the excuses can be directly communicated and intuitively understood by a human demonstrator. We show empirically and in a user study that the use of excuses reduces the demonstration time by 54% and leads to a 74% reduction in demonstration size.",
+    venue: 'Technical Report',
+    year: '2023',
+    link: 'https://arxiv.org/abs/2311.18355',
+    tags: ['humanai', 'xai', 'planning', 'hri', 'vamhri'],
+  },
+  {
+    id: 20236,
+    title:
+      'TESS: A Multi-intent Parser for Conversational Multi-Agent Systems with Decentralized Natural Language Understanding Models',
+    authors: 'Burak Aksar, Yara Rizk, and Tathagata Chakraborti',
+    abstract:
+      'Chatbots have become one of the main pathways for the delivery of business automation tools. Multi-agent systems offer a framework for designing chatbots at scale, making it easier to support complex conversations that span across multiple domains as well as enabling developers to maintain and expand their capabilities incrementally over time. However, multi-agent systems complicate the natural language understanding (NLU) of user intents, especially when they rely on decentralized NLU models: some utterances (termed single intent) may invoke a single agent while others (termed multi-intent) may explicitly invoke multiple agents. Without correctly parsing multi-intent inputs, decentralized NLU approaches will not achieve high prediction accuracy. In this paper, we propose an efficient parsing and orchestration pipeline algorithm to service multi-intent utterances from the user in the context of a multi-agent system. Our proposed approach achieved comparable performance to competitive deep learning models on three different datasets while being up to 48 times faster.',
+    venue: 'Technical Report',
+    year: '2023',
+    link: 'https://arxiv.org/abs/2312.11828',
+    tags: ['nlp', 'bpm'],
+  },
+  {
+    id: 20235,
+    title:
+      'AAAI 2023 Bridge Program on Artificial Intelligence and Business Process Management',
+    authors:
+      'Tathagata Chakraborti, Vatche Isahagian, Andrea Marrella, Chiara Di Francescomarino, Jung koo Kang, and Yara Rizk',
+    abstract:
+      'The AI4BPM Bridge at AAAI 2023 brings together academics and industry professionals working at the intersection of artificial intelligence and business process management under the same roof. The event will include invited talks, poster sessions, tutorials, student outreach, meet and mingle opportunities, hands-on system demonstrations, and much more!',
+    venue: 'AAAI xxxx Bridge Program',
+    year: '2023',
+    link:
+      'https://research.ibm.com/publications/aaai-2023-bridge-program-on-artificial-intelligence-and-business-process-management',
+    video: 'https://ai4bpm.com',
+    tags: ['planning', 'bpm'],
+  },
+  {
     id: 20234,
     title: 'Lemming: A Tool for Guided Plan Selection using Landmarks',
     authors:

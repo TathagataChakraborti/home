@@ -1,5 +1,12 @@
 const DATA = [
   {
+    id: 79,
+    title: 'Explanations when no solutions can be found',
+    venue:
+      'Invited Talk at the HRI 2024 Workshop on Explainability for Human-Robot Collaboration',
+    link: 'https://humanrobotinteraction.org/2024',
+  },
+  {
     id: 80,
     title: 'Model Acquisition in the Modern Era',
     venue: 'ICAPS 2023 Tutorial with Professor Christian Muise',
