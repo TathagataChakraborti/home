@@ -7,7 +7,7 @@ const DATA = [
     title: (
       <>
         <span style={{ color: 'silver' }}>
-          Recent and Upcoming Events | June 2023
+          Recent and Upcoming Events | January 2024
         </span>
       </>
     ),
@@ -15,31 +15,25 @@ const DATA = [
     link: null,
   },
   {
-    title: 'Model Acquisition in the Modern Era',
-    description: 'ICAPS 2023 Tutorial',
-    link: 'https://icaps23.icaps-conference.org/program/tutorials/model',
+    title:
+      'Interactive Plan Selection using Linear Temporal Logic, Disjunctive Action Landmarks, and Natural Language Instruction',
+    description: 'AAAI 2024 Demo',
+    link: null,
     current: true,
   },
   {
     title:
-      'How to React to Unsolvable Problems: On Model Space Reasoning and Large Language Models for Automated Planning',
-    description:
-      'Invited Talk at the ICRA 2023 Workshop on Robot Execution Failures and Failure Management Strategies',
-    link: 'https://robot-failures.github.io/icra2023/schedule',
-    complete: true,
+      'Can LLMs Fix Issues with Reasoning Models? Towards More Likely Models for AI Planning',
+    description: 'AAAI 2024 Main Track',
+    link: null,
+    current: true,
   },
   {
-    title: 'Planning with Mental Models: Explanations and Explainability',
+    title: 'Explanations when no solutions can be found',
     description:
-      'Invited Talk at the ICRA 2023 Workshop on Explainable Robotics',
-    link: 'https://nms.kcl.ac.uk/icra2023.explainablerobotics/#schedule',
-    complete: true,
-  },
-  {
-    title: 'Emergent Process Composition from Natural Language Inputs',
-    description: 'BPM 2022 RPA Forum Keynote',
-    link: 'https://bpm2022.uni-muenster.de/calls-and-dates/call-for-rpa-forum',
-    complete: true,
+      'Invited Talk at the HRI 2024 Workshop on Explainability for Human-Robot Collaboration',
+    link: null,
+    current: true,
   },
   {
     title: (
