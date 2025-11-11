@@ -13,6 +13,46 @@ const TAGS = {
 
 const DATA = [
   {
+    id: 20253,
+    title: 'How Good Are LLMs at Processing Tool Outputs?',
+    authors:
+      'Kiran Kate and Yara Rizk and Poulami Ghosh and Ashu Gulati and Tathagata Chakraborti and Zidane Wright and Mayank Agarwal',
+    abstract:
+      "Most realistic task automation problems require large language models (LLMs) to call tools, which often return complex JSON responses. These responses must be further processed to derive the information necessary for task completion. The ability of LLMs to do so is under-studied. In this paper, we study the tool response processing task and LLMs' abilities to process structured (JSON) responses. We created a dataset for this task, and evaluated 15 open and closed weight models using multiple prompting approaches. Our results show that JSON processing remains a difficult task even for frontier models across multiple prompting strategies. The optimal response processing strategy depends on both the nature and size of the tool outputs, as well as the complexity of the required reasoning. Variations in processing approaches can lead to performance differences ranging from 3% to 50%.",
+    venue: 'Technical Report',
+    year: '2025',
+    link: 'https://arxiv.org/abs/2510.15955',
+    video: null,
+    tags: ['nlp', 'bpm'],
+  },
+  {
+    id: 20252,
+    title:
+      'Enabling Robots to Identify Missing Steps in Robot Tasks for Guided Learning from Demonstration',
+    authors:
+      'Maximilian Diehl and Tathagata Chakraborti and Karinne Ramirez-Amaro',
+    abstract:
+      'Learning from Demonstration (LfD) systems are commonly used to teach robots new tasks by generating a set of skills from user-provided demonstrations. These skills can then be sequenced by planning algorithms to execute complex tasks. However, LfD systems typically require a full demonstration of the entire task, even when parts of it are already known to the robot. This limitation comes from the system’s inability to recognize which sub-tasks are already familiar, leading to a repetitive and burdensome demonstration process for users. In this paper, we introduce a new method for guided demonstrations that reduces this burden, by helping the robot to identify which parts of the task it already knows, considering the overall task goal and the robot’s existing skills. In particular, through a combinatorial search, the method finds the smallest necessary change in the initial task conditions that allows the robot to solve the task with its current knowledge. This state is referred to as the "excuse state." The human demonstrator is then only required to teach how to reach the excuse state (missing sub-task), rather than demonstrating the entire task. Empirical results and a pilot user study show that our method reduces demonstration time by 61% and decreases the size of demonstrations by 72%.',
+    venue: 'IEEE/SICE xxxx International Symposium on System Integration',
+    year: '2025',
+    link: 'https://ieeexplore.ieee.org/abstract/document/10870986',
+    video: null,
+    tags: ['planning', 'humanai', 'hri', 'xai'],
+  },
+  {
+    id: 20251,
+    title: 'A Human-in-the-loop API Sequencing Tool Powered by AI Planning',
+    authors:
+      'Jungkoo Kang and Tathagata Chakraborti and Junkyu Lee and Michael Katz and Shirin Sohrabi and Gaodan Fang and Punleuk Oum and Prabhat Reddy and Diego del Rio and Debashish Saha and Gegi Thomas and Benjamin Herta and Jim A Laredo and Alina Rotarescu and Alice Zhang and Suzette Samoojh',
+    abstract:
+      'In this demo, we present a real-time API recommender system powered by an automated planner. Our tool generates multiple API recommendations for over 600 APIs within a bound of 5 seconds. By inputting a partial list of APIs, our tool dynamically fills in missing components to create a more functional or complete workflow. While this task has been historically perceived as solely a data-driven endeavor, we demonstrate how a planner can be harnessed to utilize both association information and structural dependencies between different APIs. As part of the demonstration, we also report on data gathered from the initial deployment of the tool.',
+    venue: 'ICAPS xxxx Demonstration',
+    year: '2025',
+    link: null,
+    video: null,
+    tags: ['planning', 'humanai', 'bpm'],
+  },
+  {
     id: 20242,
     title:
       'Interactive Plan Selection using Linear Temporal Logic, Disjunctive Action Landmarks, and Natural Language Instruction',

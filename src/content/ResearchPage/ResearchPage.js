@@ -35,7 +35,7 @@ const Project = props => {
               state: { tags: props.props.tags },
             }}
             className="no-decoration-enforce">
-            <Button kind="secondary" size="md">
+            <Button kind="secondary" size="md" disabled={props.props.patch}>
               Learn More
             </Button>
           </NewLink>
@@ -94,22 +94,20 @@ class ResearchPage extends React.Component {
             <Grid>
               <Column lg={2} md={4} sm={4}>
                 <Project props={DATA[0]} />
-                <Project props={DATA[2]} />
+                <Project3 props={DATA[1]} />
+                <Project3 props={DATA[2]} />
+                <Project props={DATA[4]} />
+                <Project3 props={DATA[6]} />
+                <Project3 props={DATA[7]} />
+                <Project3 props={DATA[8]} />
               </Column>
 
               <Column lg={2} md={4} sm={4}>
                 <Grid>
                   <Column lg={4} md={4} sm={4}>
-                    <Project props={DATA[1]} />
-                    <Project props={DATA[6]} />
-                  </Column>
-
-                  <Column lg={4} md={4} sm={4}>
-                    <Project3 props={DATA[3]} />
-
-                    <Project3 props={DATA[4]} />
-
-                    <Project3 props={DATA[5]} />
+                    <Project props={DATA[3]} />
+                    <Project props={DATA[9]} />
+                    <Project props={DATA[5]} />
                   </Column>
                 </Grid>
               </Column>

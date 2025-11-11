@@ -1,87 +1,80 @@
 const DATA = [
   {
     id: 11,
-    title: 'System and Method for Plan Visualization by Disambiguation',
+    title: 'Plan visualization by disambiguation',
     authors:
-      'Jung koo Kang, Michael Katz, Shirin Sohrabi Araghi, and Tathagata Chakraborti',
-    year: '2023',
+      'Jungkoo Kang, Michael Katz, Shirin Sohrabi Araghi, and Tathagata Chakraborti',
+    year: '2025',
   },
   {
     id: 10,
-    title:
-      'A System and Method for Interfacing with Planned Operations of an Aggregated Assistant',
+    title: 'Interfacing with planned operations of an aggregated assistant',
     authors:
       'Kristina Marie Brimijoin, Shubham Agarwal, Tathagata Chakraborti, Aalim Lakhani, and Scott Boag',
-    year: '2022',
+    year: '2024',
   },
   {
     id: 9,
-    title:
-      'A System and Method to Explain AI Systems that Convert Natural Language Utterances to Flows',
-    authors:
-      'Tathagata Chakraborti, Arunima Chaudhary, Michelle Brachman, Qian Pan, James Johnson, Yara Rizk, and Burak Aksar',
-    year: '2021',
+    title: 'Multi-agent chatbot with multi-intent recognition',
+    authors: 'Burak Aksar, Yara Rizk, and Tathagata Chakraborti',
+    year: '2024',
   },
   {
     id: 8,
-    title:
-      'A System and Method for Multi-Intent Recognition in Multi-Agent Chatbots',
-    authors: 'Burak Aksar, Yara Rizk, and Tathagata Chakraborti',
-    year: '2021',
+    title: 'Automated generation of workflows',
+    authors:
+      'Sarath Sreedharan, Tathagata Chakraborti, Vinod Muthusamy, Yara Rizk, and Yasaman Khazaeni',
+    year: '2024',
   },
   {
     id: 7,
-    title:
-      'A System and Method for Modeling Metrics Goals for Assistant Composition',
+    title: 'Explaining natural-language-to-flow pipelines',
     authors:
-      'Sarath Sreedharan, Tathagata Chakraborti, Vinod Muthusamy, Yara Rizk, and Yasaman Khazaeni',
-    year: '2020',
+      'Tathagata Chakraborti, Arunima Chaudhary, Michelle Brachman, Qian Pan, James Johnson, Yara Rizk, and Burak Aksar',
+    year: '2023',
   },
   {
     id: 6,
-    title:
-      'A System and Method for Explaining Behavior of Aggregated Assistants',
+    title: "Generating explanations for an aggregated assistant's actions",
     authors:
       'Sarath Sreedharan, Tathagata Chakraborti, Yara Rizk, Vinod Muthusamy, and Yasaman Khazaeni',
-    year: '2020',
+    year: '2023',
   },
   {
     id: 5,
-    title:
-      'A System and Method for Optimizing Business Processes Using Non-Deterministic Planning',
-    authors:
-      'Tathagata Chakraborti, Sarath Sreedharan, Shubham Agarwal, Yasaman Khazaeni, Yara Rizk, and Vatche Isahagian',
-    year: '2020',
+    title: 'Automated personalization of a user experience',
+    authors: 'Tathagata Chakraborti',
+    year: '2023',
   },
   {
     id: 4,
     title:
-      'System and Method for the Orchestration of Plugins on the Command Line',
+      'System and method for the orchestration of plugins on the command line',
     authors:
       'Tathagata Chakraborti, Mayank Agarwal, Zhongshen Zeng, Yasaman Khazaeni, and Sohini Upadhyay',
-    year: '2019',
+    year: '2023',
   },
   {
     id: 3,
     title:
-      'Method for automated personalization of walkthroughs and tutorials of software products',
-    authors: 'Tathagata Chakraborti',
-    year: '2019',
+      'Flexible artificial intelligence agent infrastructure for adapting processing of a shell',
+    authors:
+      'Tathagata Chakraborti, Mayank Agarwal, Eli M Dow, Kartik Talamadupula, Kshitij Fadnis, Jorge J Barroso Carmona, and Borja Godoy',
+    year: '2023',
   },
   {
     id: 2,
-    title: 'Data Augmented Training of Reinforcement Learning Software',
+    title: 'Data augmented training of reinforcement learning software agent',
     authors:
-      'Tathagata Chakraborti, Kartik Talamadupula, Kshitij P. Fadnis, Biplav Srivastava, and Murray S. Campbell',
-    year: '2019',
+      'Tathagata Chakraborti, Kartik Talamadupula, Kshitij P. Fadnis, Biplav Srivastava, and Murray Scott Campbell',
+    year: '2023',
   },
   {
     id: 1,
-    title:
-      'Flexible Artificial Intelligence Agent Infrastructure for Adapting Processing of a Shell',
+    title: 'Business processes optimization using non-deterministic planning',
     authors:
-      'Tathagata Chakraborti, Jorge B. Carmona, Mayank Agarwal, Borja Godoy, Eli M. Dow, Kartik Talamadupula, and Kshitij P. Fadnis',
-    year: '2019',
+      'Tathagata Chakraborti, Sarath Sreedharan, Shubham Agarwal, Yasaman Khazaeni, Yara Rizk, and Vatche Isahagian',
+    year: '2022',
   },
 ];
 
