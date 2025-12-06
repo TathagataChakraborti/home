@@ -10,8 +10,8 @@ import {
   Header,
   HeaderMenuButton,
   HeaderName,
-  HeaderNavigation,
-  HeaderMenuItem,
+  // HeaderNavigation,
+  // HeaderMenuItem,
   SkipToContent,
   SideNav,
   SideNavItems,
@@ -68,14 +68,14 @@ class PageHeader extends React.Component {
                 prefix="Tathagata's">
                 Home
               </HeaderName>
-              <HeaderNavigation aria-label="">
+              {/* <HeaderNavigation aria-label="">
                 <HeaderMenuItem
                   target="_blank"
                   href="https://www.research.ibm.com/artificial-intelligence"
                   rel="noopener noreferrer">
                   IBM Research AI
                 </HeaderMenuItem>
-              </HeaderNavigation>
+              </HeaderNavigation> */}
               <SideNav
                 aria-label="Navigation Options"
                 expanded={isSideNavExpanded}>

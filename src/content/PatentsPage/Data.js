@@ -1,5 +1,21 @@
 const DATA = [
   {
+    id: 13,
+    title:
+      'A Method for Fast Validation and Repair of Tool Calling in Agentic Systems',
+    authors:
+      'Tathagata Chakraborti, Zidane Wright, Jungkoo Kang, and Kiran A Kate',
+    year: '2025',
+  },
+  {
+    id: 12,
+    title:
+      'A System and Method for Predictive Caching of Tool Responses in Agentic Systems',
+    authors:
+      'Tathagata Chakraborti, Kiran A Kate, Poulomi Ghosh, Yara Rizk, and Mayank Agarwal',
+    year: '2025',
+  },
+  {
     id: 11,
     title: 'Plan visualization by disambiguation',
     authors:
