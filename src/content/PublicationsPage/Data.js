@@ -1,4 +1,5 @@
 const TAGS = {
+  agentic: 'Agentic',
   humanai: 'Human-AI',
   planning: 'Planning',
   nlp: 'NLP',
@@ -23,7 +24,7 @@ const DATA = [
     year: '2025',
     link: 'https://arxiv.org/abs/2510.15955',
     video: null,
-    tags: ['nlp', 'bpm'],
+    tags: ['agentic', 'nlp', 'bpm'],
   },
   {
     id: 20252,
@@ -48,9 +49,24 @@ const DATA = [
       'In this demo, we present a real-time API recommender system powered by an automated planner. Our tool generates multiple API recommendations for over 600 APIs within a bound of 5 seconds. By inputting a partial list of APIs, our tool dynamically fills in missing components to create a more functional or complete workflow. While this task has been historically perceived as solely a data-driven endeavor, we demonstrate how a planner can be harnessed to utilize both association information and structural dependencies between different APIs. As part of the demonstration, we also report on data gathered from the initial deployment of the tool.',
     venue: 'ICAPS xxxx Demonstration',
     year: '2025',
-    link: null,
+    link: 'https://openreview.net/pdf?id=I2yuXzj7EY',
     video: null,
-    tags: ['planning', 'humanai', 'bpm'],
+    tags: ['agentic', 'planning', 'humanai', 'bpm'],
+  },
+  {
+    id: 20243,
+    title:
+      'Planning with mental models – Balancing explanations and explicability',
+    authors:
+      'Sarath Sreedharan, Tathagata Chakraborti, Christian Muise, and Subbarao Kambhampati',
+    abstract:
+      'Human-aware planning involves generating plans that are explicable, i.e. conform to user expectations, as well as providing explanations when such plans cannot be found. In this paper, we bring these two concepts together and show how an agent can achieve a trade-off between these two competing characteristics of a plan. To achieve this, we conceive a first-of-its-kind planner MEGA that can reason about the possibility of explaining a plan in the plan generation process itself. We will also explore how solutions to such problems can be expressed as “self-explaining plans” – and show how this representation allows us to leverage classical planning compilations of epistemic planning to reason about this trade-off at plan generation time without having to incur the computational burden of having to search in the space of differences between the agent model and the mental model of the human in the loop in order to come up with the optimal trade-off. We will illustrate these concepts in two well-known planning domains, as well as with a robot in a typical search and reconnaissance task. Human factor studies in the latter highlight the usefulness of the proposed approach.',
+    venue: 'Artificial Intelligence Journal',
+    year: '2024',
+    link:
+      'https://www.sciencedirect.com/science/article/abs/pii/S0004370224001176',
+    video: null,
+    tags: ['planning', 'humanai', 'xai', 'hri'],
   },
   {
     id: 20242,
@@ -101,7 +117,7 @@ const DATA = [
     venue: 'Technical Report',
     year: '2023',
     link: 'https://arxiv.org/abs/2312.11828',
-    tags: ['nlp', 'bpm'],
+    tags: ['agentic', 'nlp', 'bpm'],
   },
   {
     id: 20235,
@@ -229,8 +245,8 @@ const DATA = [
       'Web applications and services are increasingly important in a distributed internet filled with diverse cloud services and applications, each of which enable the completion of narrowly defined tasks. Given the explosion in the scale and diversity of such services, their composition and integration for achieving complex user goals remains a challenging task for end-users and requires a lot of development effort when specified by hand. We present a demonstration of the Goal Oriented Flow Assistant (GOFA) system, which provides a natural language solution to generate workflows for application integration. Our tool is built on a three-step pipeline: it first uses Abstract Meaning Representation (AMR) to parse utterances; it then uses a knowledge graph to validate candidates; and finally uses an AI planner to compose the candidate flow. We provide a video demonstration of the deployed system as part of our submission.',
     venue: 'AAAI xxxx Demonstration',
     year: '2022',
-    link: 'https://www.aaai.org/AAAI22Papers/DEMO-00255-BrachmanM.pdf',
-    tags: ['bpm', 'nlp', 'planning', 'ai4code', 'humanai'],
+    link: 'https://ojs.aaai.org/index.php/AAAI/article/view/21712',
+    tags: ['agentic', 'bpm', 'nlp', 'planning', 'ai4code', 'humanai'],
     video: 'https://ibm.biz/gofa-aaai',
   },
   {
@@ -255,7 +271,7 @@ const DATA = [
     venue: 'ICAPS xxxx Demonstration',
     year: '2021',
     link: 'https://icaps21.icaps-conference.org/demos/demos/389.pdf',
-    tags: ['bpm', 'nlp', 'planning', 'humanai'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning', 'humanai'],
     video: 'https://youtu.be/K7FPcl-IYgE',
   },
   {
@@ -267,7 +283,7 @@ const DATA = [
     venue: 'Companion to Proceedings of BPM xxxx',
     year: '2021',
     link: null,
-    tags: ['bpm', 'nlp', 'planning'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning'],
   },
   {
     id: 20211,
@@ -306,7 +322,7 @@ const DATA = [
     year: '2021',
     link:
       'https://www.degruyter.com/document/doi/10.1515/9783110676693-008/html',
-    tags: ['bpm', 'nlp', 'planning'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning'],
   },
   {
     id: 1,
@@ -344,7 +360,7 @@ const DATA = [
     venue: 'ICAPS xxxx Workshop on Explainable AI Planning',
     year: '2020',
     link: 'https://arxiv.org/abs/2011.10707',
-    tags: ['nlp', 'xai', 'planning', 'bpm', 'humanai'],
+    tags: ['agentic', 'nlp', 'xai', 'planning', 'bpm', 'humanai'],
   },
   {
     id: 2,
@@ -372,7 +388,7 @@ const DATA = [
     venue: 'BPM xxxx RPA Forum',
     year: '2020',
     link: 'https://arxiv.org/abs/2007.13257',
-    tags: ['bpm', 'nlp', 'planning', 'humanai', 'xai'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning', 'humanai', 'xai'],
   },
   {
     id: 29,
@@ -385,7 +401,7 @@ const DATA = [
     venue: 'BPM xxxx Workshop on AI4BPM',
     year: '2020',
     link: 'https://arxiv.org/abs/2001.02619',
-    tags: ['bpm', 'nlp', 'planning', 'humanai'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning', 'humanai'],
   },
   {
     id: 3,
@@ -422,7 +438,7 @@ const DATA = [
     venue: 'Technical Report',
     year: '2020',
     link: 'https://arxiv.org/abs/1910.08137',
-    tags: ['bpm', 'nlp', 'planning', 'humanai'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning', 'humanai'],
   },
   {
     id: 5,
@@ -448,7 +464,7 @@ const DATA = [
     venue: 'AAAI xxxx Workshop on Intelligent Process Automation',
     year: '2020',
     link: 'https://arxiv.org/abs/2001.03543',
-    tags: ['bpm', 'nlp', 'planning', 'humanai'],
+    tags: ['agentic', 'bpm', 'nlp', 'planning', 'humanai'],
   },
   {
     id: 31,
@@ -509,7 +525,7 @@ const DATA = [
     venue: 'AI Communications',
     year: '2019',
     link: 'https://content.iospress.com/articles/ai-communications/aic180609',
-    tags: ['xai', 'nlp', 'planning', 'support', 'humanai'],
+    tags: ['agentic', 'xai', 'nlp', 'planning', 'support', 'humanai'],
   },
   {
     id: 13,
@@ -669,7 +685,7 @@ const DATA = [
     venue: 'IJCAI xxxx Demo',
     year: '2018',
     link: 'https://www.ijcai.org/Proceedings/2018/849',
-    tags: ['xai', 'planning', 'nlp', 'support', 'humanai'],
+    tags: ['agentic', 'xai', 'planning', 'nlp', 'support', 'humanai'],
     award: 'ICAPS 2018 People’s Choice Best System Demonstration Award',
   },
   {
@@ -846,8 +862,7 @@ const DATA = [
       "In this paper, we report work in progress on the development of Mr. Jones -- a proactive orchestrator and decision support agent for a collaborative decision making setting embodied by a smart room. The duties of such an agent may range across interactive problem solving with other agents in the environment, developing automated summaries of meetings, visualization of the internal decision making process, proactive data and resource management, and so on. Specifically, we highlight the importance of integrating higher level symbolic reasoning and intent recognition in the design of such an agent, and outline pathways towards the realization of these capabilities. We will demonstrate some of these functionalities here in the context of automated orchestration of a meeting in the CEL -- the Cognitive Environments Laboratory at IBM's T.J. Watson Research Center.",
     venue: 'AAAI xxxx Fall Symposium',
     year: '2017',
-    link:
-      'https://www.aaai.org/ocs/index.php/FSS/FSS17/paper/download/16029/15323',
+    link: 'https://cdn.aaai.org/ocs/16029/16029-69893-1-PB.pdf',
     tags: ['support', 'planning', 'nlp', 'support', 'humanai'],
   },
   {
@@ -935,7 +950,7 @@ const DATA = [
     venue: 'Technical Report',
     year: '2016',
     link: 'https://arxiv.org/abs/1706.01133',
-    tags: ['planning', 'hri'],
+    tags: ['agentic', 'planning', 'hri'],
   },
   {
     id: 53,

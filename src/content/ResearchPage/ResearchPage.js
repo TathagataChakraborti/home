@@ -1,85 +1,73 @@
 import React from 'react';
-import { Link as NewLink } from 'react-router-dom';
 import { generateImageUrl } from '../../components/Info';
-import { Grid, Column, Theme, Tile, Button } from '@carbon/react';
+import { Grid, Column, Theme, Tile, Tag, Button } from '@carbon/react';
+import { VideoAdd, Http, Document, LogoGithub } from '@carbon/icons-react';
 
 import PageHeader from '../../components/PageHeader';
 import DATA from './Data.js';
 
-const Project = props => {
-  return (
-    <Tile style={{ marginBottom: '30px', backgroundColor: 'white' }}>
-      <div>
-        {props.props.image && (
-          <div style={{ textAlign: 'center' }}>
-            <img
-              style={{
-                maxWidth: '100%',
-              }}
-              src={generateImageUrl(props.props.image, props.props.image_type)}
-              alt="Illustration"
-            />
-          </div>
-        )}
+import { TAGS } from '../PublicationsPage/Data.js';
 
-        {props.props.primary && props.props.name && (
-          <div style={{ marginBottom: '20px', width: '75%' }}>
-            <h1>{props.props.name}</h1>
-          </div>
-        )}
-
-        {props.props.primary && (
-          <NewLink
-            to={{
-              pathname: '/publications',
-              state: { tags: props.props.tags },
-            }}
-            className="no-decoration-enforce">
-            <Button kind="secondary" size="md" disabled={props.props.patch}>
-              Learn More
-            </Button>
-          </NewLink>
-        )}
-
-        {props.props.secondary && (
-          <NewLink
-            to={{
-              pathname: '/publications',
-              state: { tags: props.props.tags },
-            }}
-            className="no-decoration-enforce">
-            <Button kind="secondary" size="md">
-              {props.props.name}
-            </Button>
-          </NewLink>
-        )}
-
-        {props.props.tertiary && (
-          <Button
-            href={props.props.link}
-            target="_blank"
-            className="no-decoration-enforce"
-            kind="secondary"
-            size="md">
-            {props.props.name}
-          </Button>
-        )}
-      </div>
-    </Tile>
-  );
+const url_type_map = {
+  code: LogoGithub,
+  paper: Document,
+  website: Http,
+  video: VideoAdd,
 };
 
-const Project3 = props => {
+const Project = props => {
   return (
-    <Tile
-      className="tertiary-project"
-      style={{ marginBottom: '20px', backgroundColor: 'white' }}
-      onClick={() => window.open(props.props.link, '_blank')}>
-      {props.props.name && (
-        <>
-          <h4>{props.props.name}</h4>
-        </>
+    <Tile style={{ marginBottom: '32px', padding: '0' }}>
+      {props.data.image && (
+        <img
+          alt=""
+          src={generateImageUrl(props.data.image)}
+          width="100%"
+          height="auto"
+        />
       )}
+
+      <div style={{ padding: '16px' }}>
+        {Object.keys(TAGS).map((item, key) => (
+          <React.Fragment key={key}>
+            {props.data.tags.indexOf(item) > -1 && (
+              <Tag type="purple" className={'explore-tags ' + item}>
+                {TAGS[item]}
+              </Tag>
+            )}
+          </React.Fragment>
+        ))}
+        <br />
+        <br />
+
+        <h6>{props.data.name}</h6>
+
+        <div style={{ marginTop: '8px' }}>{props.data.description}</div>
+        <br />
+
+        {props.data.links && (
+          <>
+            {props.data.links.map((item, id) => (
+              <Button
+                key={id}
+                target="_blank"
+                href={item.url}
+                className="project-button"
+                kind="ghost"
+                size="md"
+                hasIconOnly
+                renderIcon={url_type_map[item.type]}
+                iconDescription={item.type}></Button>
+            ))}
+
+            {props.data.links.length === 0 && (
+              <Button kind="tertiary" size="sm" disabled>
+                Coming soon
+              </Button>
+            )}
+          </>
+        )}
+      </div>
     </Tile>
   );
 };
@@ -92,23 +80,36 @@ class ResearchPage extends React.Component {
         <Grid className="offset">
           <Column lg={{ start: 4, end: 16 }} md={{ start: 2, end: 9 }} sm={4}>
             <Grid>
-              <Column lg={2} md={4} sm={4}>
-                <Project props={DATA[0]} />
-                <Project3 props={DATA[1]} />
-                <Project3 props={DATA[2]} />
-                <Project props={DATA[4]} />
-                <Project3 props={DATA[6]} />
-                <Project3 props={DATA[7]} />
-                <Project3 props={DATA[8]} />
-              </Column>
-
-              <Column lg={2} md={4} sm={4}>
+              <Column lg={12} md={8} sm={4}>
+                <h6>Current Projects</h6>
+                <hr />
+                <br />
                 <Grid>
-                  <Column lg={4} md={4} sm={4}>
-                    <Project props={DATA[3]} />
-                    <Project props={DATA[9]} />
-                    <Project props={DATA[5]} />
-                  </Column>
+                  {[0, 1, 2].map(index => (
+                    <Column lg={4} md={4} sm={4}>
+                      {DATA.filter(item => item.active)
+                        .filter((_, id) => id % 3 === index)
+                        .map(item => (
+                          <Project key={item.id} data={item} />
+                        ))}
+                    </Column>
+                  ))}
+                </Grid>
+              </Column>
+              <Column lg={12} md={8} sm={4}>
+                <h6>Past Projects</h6>
+                <hr />
+                <br />
+                <Grid>
+                  {[0, 1, 2].map(index => (
+                    <Column lg={4} md={4} sm={4}>
+                      {DATA.filter(item => !item.active)
+                        .filter((_, id) => id % 3 === index)
+                        .map(item => (
+                          <Project key={item.id} data={item} />
+                        ))}
+                    </Column>
+                  ))}
                 </Grid>
               </Column>
             </Grid>
