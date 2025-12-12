@@ -65,7 +65,7 @@ const DATA = [
   {
     id: 6,
     active: true,
-    name: '',
+    name: 'Evaluating planning capacity of LLMs',
     description:
       'An interface for ablation studies of the planning performance of agentic systems, especially for evaluating tool calling capabilities in the presence of tightly coupled catalogs, memory usage, and process and behavioral constraints',
     links: [],
