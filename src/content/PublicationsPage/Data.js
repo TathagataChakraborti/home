@@ -962,8 +962,7 @@ const DATA = [
       'As robots evolve into an integral part of the human ecosystem, humans and robots will be involved in a multitude of collaborative tasks that require complex coordination and cooperation. Indeed there has been extensive work in the robotics, planning as well as the human-robot interaction communities to understand and facilitate such seamless teaming. However, it has been argued that their increased participation as independent autonomous agents in hitherto human-habited environments has introduced many new challenges to the view of traditional human-robot teaming. When robots are deployed with independent and often self-sufficient tasks in a shared workspace, teams are often not formed explicitly and multiple teams cohabiting anenvironment interact more like colleagues rather than teammates. In this paper, we formalize these differences and analyze metrics to characterize autonomous behavior in such human-robot cohabitation settings.',
     venue: 'AAAI xxxx Workshop on Symbiotic Cognitive Systems',
     year: '2016',
-    link:
-      'https://www.aaai.org/ocs/index.php/WS/AAAIW16/paper/viewPDFInterstitial/12591/12447',
+    link: 'https://aaai.org/papers/aaaiw-ws0179-16-12591/',
     tags: ['planning', 'hri', 'humanai'],
   },
   {

@@ -322,6 +322,10 @@ const DATA = [
         type: 'code',
       },
       {
+        url: 'http://nlc2cmd.us-east.mybluemix.net',
+        type: 'website',
+      },
+      {
         url: 'https://dl.acm.org/doi/10.5555/3297863.3297870',
         type: 'paper',
       },
@@ -332,7 +336,7 @@ const DATA = [
   {
     id: 20,
     active: false,
-    name: 'Declarative specification of process components',
+    name: 'IBM Watson Assistant',
     description:
       'A series of projects exploring the application of declarative specification for components in a dialogue or process management system.',
     links: [
@@ -435,6 +439,10 @@ const DATA = [
         type: 'paper',
       },
       {
+        url: 'https://www.ijcai.org/Proceedings/2018/849',
+        type: 'paper',
+      },
+      {
         url: 'https://arxiv.org/abs/1706.01133',
         type: 'paper',
       },
@@ -460,9 +468,9 @@ const DATA = [
   {
     id: 26,
     active: false,
-    name: 'Human-Aware Planning',
+    name: 'Explainable AI, XAI/P',
     description:
-      'Foundational contributions to human-aware planning and explainable AI, particularly through the formalization of the model reconciliation process in quantifiable form in human-robot interactions.',
+      'Building on earlier work on human-aware planning, this series of papers make foundational contributions to human-aware planning and explainable AI, particularly through the formalization of a computational model of explanations, and its trade off with various models of interpretable behavior, through the model reconciliation process in human-AI interactions.',
     links: [
       {
         url: 'https://explainableplanning.com',
@@ -482,8 +490,78 @@ const DATA = [
         url: 'https://haxp-icaps.web.app',
         type: 'website',
       },
+      {
+        url: 'https://dl.acm.org/doi/10.1145/3306618.3314281',
+        type: 'paper',
+      },
+      {
+        url: 'https://ojs.aaai.org/index.php/AAAI/article/view/5634',
+        type: 'paper',
+      },
+      {
+        url: 'https://ieeexplore.ieee.org/document/9340832',
+        type: 'paper',
+      },
     ],
     image: 'balancing',
+    tags: ['planning', 'humanai', 'hri'],
+  },
+  {
+    id: 27,
+    active: false,
+    name: 'Operational Security of ML systems',
+    description:
+      'A group of projects with a more wholistic view of security in a software system built around an ML system that may be vulnerable to adversarial attacks.',
+    links: [
+      {
+        url: 'https://link.springer.com/chapter/10.1007/978-3-030-32430-8_28',
+        type: 'paper',
+      },
+      {
+        url: 'https://rakaposhi.eas.asu.edu/paper_files/aaai_ws_bounded.pdf',
+        type: 'paper',
+      },
+    ],
+    image: 'deep',
+    tags: ['advml'],
+  },
+  {
+    id: 28,
+    active: false,
+    name: 'Human-Aware Planning',
+    description:
+      'New forms of joint planning for human-robot teams that deconflict resource usage and incentivize collaboration while minimizing explicit communcation. This project was a precursor to a more mature and comprehensive model of human-aware planning developed later with the formalization of the model reconciliation process in explainable AI.',
+    links: [
+      {
+        url: 'https://dl.acm.org/doi/abs/10.5555/2936924.2937081',
+        type: 'paper',
+      },
+      {
+        url: 'https://ieeexplore.ieee.org/document/7354125',
+        type: 'paper',
+      },
+      {
+        url: 'https://ieeexplore.ieee.org/document/7353878',
+        type: 'paper',
+      },
+      {
+        url: 'https://aaai.org/papers/aaaiw-ws0180-16-12592/',
+        type: 'paper',
+      },
+      {
+        url: 'https://aaai.org/papers/aaaiw-ws0179-16-12591/',
+        type: 'paper',
+      },
+      {
+        url: 'https://ieeexplore.ieee.org/abstract/document/6942970',
+        type: 'paper',
+      },
+      {
+        url: 'https://ieeexplore.ieee.org/document/7989155',
+        type: 'paper',
+      },
+    ],
+    image: 'serendipity',
     tags: ['planning', 'humanai', 'hri'],
   },
 ];
