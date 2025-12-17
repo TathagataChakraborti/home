@@ -295,7 +295,7 @@ const DATA = [
         type: 'code',
       },
       {
-        url: 'https://india-covid-19-data.mybluemix.net',
+        url: 'https://covid19-india-archive.web.app',
         type: 'website',
       },
     ],
@@ -322,7 +322,7 @@ const DATA = [
         type: 'code',
       },
       {
-        url: 'http://nlc2cmd.us-east.mybluemix.net',
+        url: 'https://nlc2cmd-at-neurips.web.app',
         type: 'website',
       },
       {
