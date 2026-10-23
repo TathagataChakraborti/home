@@ -186,7 +186,7 @@ const DATA = [
         type: 'paper',
       },
       {
-        url: 'https://ai4bpm.com',
+        url: 'https://ai4bpm.web.app',
         type: 'website',
       },
       {
